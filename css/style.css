@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0
+}
+
+:root {
+    --text-color-1: #fff;
+    --text-color-2: #000;
+    --text-color-3: #ccc;
+    --text-color-4: #333;
+    --text-color-5: #888;
+    --text-color-6: #999;
+    --other-color-1: #3db166;
+}
+
+body {
+    font-family: 'Poppins', sans-serif
+}
+
+.max-width-boxes {
+    max-width: 1200px;
+    margin: 0 auto
+}
+
+.flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+
+/*  */
+
+#home-vision-head-tab {}
+
+.gdlr-core-tab-item-image-background {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.gdlr-core-tab-item-content {
+    display: none;
+}
+
+.gdlr-core-tab-item-content.gdlr-core-active {
+    display: block;
+}
+
+
+/* Footer */
+
+.footer-1-main-box {
+    padding: 4.1em 1.24em;
+    background-color: #181818
+}
+
+.footer-1-main-box>div {
+    width: 25%;
+    padding-left: 20px;
+    padding-right: 20px;
+    vertical-align: top;
+}
+
+.footer-1-section-1 p {
+    color: var(--text-color-6, #fff);
+    line-height: 1.7;
+    margin: 0.9em 0;
+    margin-top: 2.3em;
+}
+
+.footer-details {
+    color: var(--text-color-1, #fff)
+}
+
+.footer-details>div {
+    padding: 0.5em 0;
+    font-size: 0.95rem;
+}
+
+.footer-details>div:last-child {
+    padding-top: 0.3em;
+    padding-bottom: 1.2em;
+    border-bottom: 2px solid var(--other-color-1)
+}
+
+.footer-details a {
+    text-decoration: none;
+    color: var(--text-color-1, #fff);
+}
+
+.footer-1-title {
+    color: var(--text-color-1, #fff);
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-bottom: 2px solid var(--other-color-1, #3db166);
+    padding-bottom: 0.7em;
+    margin-bottom: 1.5em
+}
+
+.footer-nav {
+    list-style: none;
+    padding: 0
+}
+
+.footer-nav li {
+    margin: 10px auto
+}
+
+.footer-nav li a {
+    text-decoration: none;
+    color: var(--text-color-5, #888);
+}
+
+.footer-2-main-box {
+    padding: 2.1em 2.5em;
+    background-color: #202020
+}
+
+.footer-2-left {
+    color: #888;
+    font-size: 0.938rem
+}
+
+.footer-2-right a {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--other-color-1, #fff);
+    font-weight: 600;
+    margin-left: 19px
+}
