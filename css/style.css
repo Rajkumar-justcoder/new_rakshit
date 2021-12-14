@@ -18,92 +18,121 @@ body {
     font-size: 16px;
 }
 
+.max-width-boxes {
+    max-width: 1200px;
+    margin: 0 auto
+}
+
+.flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+
 /* Nav bar start */
 
 .parrent-main {
     position: sticky;
-    top: 0; 
+    top: 0;
 }
 
-.main-nav-sec{
+.main-nav-sec {
     display: flex;
     justify-content: center;
     flex-direction: column;
     background-color: white;
     position: relative;
+    height: 210px;
+    transition: all 0.3s ease-in-out
 }
-.main-img{
+
+.main-nav-sec.scroll-nav {
+    height: 176px;
+}
+
+.main-img {
     display: flex;
     box-shadow: 0px 11px 5px -1px rgb(0 0 0 / 30%);
     -webkit-box-shadow: 0px 11px 5px -1px rgb(0 0 0 / 30%);
     padding: 24px 20px 28px;
-    justify-content: center;
+    justify-content: center
 }
 
-
-.div-img{
+.div-img {
     display: inherit;
     justify-content: center;
+    width: 100%
+}
+
+.div-img a {
+    text-decoration: none
+}
+
+.div-img img {
+    display: block;
     width: 100%;
+    transition: all 0.3s ease-in-out
 }
-.div-img>a{
-    text-decoration: none;
-}
-.main-nav{
+
+.main-nav {
     display: flex;
     justify-content: center;
     padding: 25px 0;
 }
-.nav-ul{display: inherit;}
-.nav-ul>ul{
+
+.nav-ul {
+    display: inherit;
+}
+
+.nav-ul>ul {
     display: flex;
     justify-content: center;
     line-height: 1.7;
+    flex-wrap: wrap;
     text-align: left;
     margin-bottom: 0px;
     padding-left: 0%;
 }
-.li-home{
+
+.li-home {
     padding-left: 0%;
 }
-.img-scroll-eff{
-transition: background 300ms, color 300ms, border-color 300ms, padding 200ms;
--moz-transition: background 300ms, color 300ms, border-color 300ms, padding 200ms;
--o-transition: background 300ms, color 300ms, border-color 300ms, padding 200ms;
--webkit-transition: background 300ms, color 300ms, border-color 300ms, padding 200ms;
-}
 
-.main-nav-a{
+.main-nav-a {
     font-size: 16px;
     font-weight: 500;
-    color:#163269;
+    color: #163269;
     text-decoration: none;
 }
-.main-nav-a:hover{
+
+.main-nav-a:hover {
     color: var(--other-color-1)
 }
-.main-li{
+
+.main-li {
     display: inherit;
     list-style: none;
     flex-direction: row;
-    padding: 0 18px;
+    padding: 0 18px
 }
 
-.scroll-nav img{
-    height: 56px;
-}
-.scroll-nav .main-img{
-    padding: 8px 20px 6px;
-}
-.scroll-nav .main-nav{
-    padding: 20px 0;
+.scroll-nav img {
+    height: 56px
 }
 
+.scroll-nav .main-img {
+    /* padding: 8px 20px 6px; */
+}
+
+.scroll-nav .main-nav {
+    /* padding: 20px 0; */
+}
 
 
 /* nav search */
 
-input#find{
+input#find {
     padding-top: 0;
 }
 
@@ -116,17 +145,18 @@ input#find{
     outline: none;
     border: white;
 }
+
 .search input[type=search] {
     -webkit-appearance: textfield;
     -webkit-box-sizing: content-box;
     font-family: inherit;
     font-size: 100%;
 }
+
 .search input::-webkit-search-decoration,
 .search input::-webkit-search-cancel-button {
     display: none;
 }
-
 
 .search input[type=search] {
     background: url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
@@ -135,58 +165,67 @@ input#find{
     -webkit-border-radius: 10em;
     -moz-border-radius: 10em;
     border-radius: 10em;
-
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
     transition: all .5s;
 }
+
 .search input[type=search]:focus {
     width: 130px;
     background-color: #fff;
     border-color: #66CC75;
-
-    -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
-    -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
-    box-shadow: 0 0 5px rgba(109,207,246,.5);
+    -webkit-box-shadow: 0 0 5px rgba(109, 207, 246, .5);
+    -moz-box-shadow: 0 0 5px rgba(109, 207, 246, .5);
+    box-shadow: 0 0 5px rgba(109, 207, 246, .5);
 }
-
 
 .search input:-moz-placeholder {
     color: #999;
 }
+
 .search input::-webkit-input-placeholder {
     color: #999;
 }
 
+
 /* Demo 2 */
-.search  input[type=search] {
+
+.search input[type=search] {
     width: 15px;
     padding-left: 10px;
     color: transparent;
     cursor: pointer;
 }
-.search  input[type=search]:hover {
+
+.search input[type=search]:hover {
     background-color: #fff;
 }
-.search  input[type=search]:focus {
+
+.search input[type=search]:focus {
     width: 130px;
     padding-left: 32px;
     color: #000;
     background-color: #fff;
     cursor: auto;
 }
-.search  input:-moz-placeholder {
+
+.search input:-moz-placeholder {
     color: transparent;
 }
-.search  input::-webkit-input-placeholder {
+
+.search input::-webkit-input-placeholder {
     color: transparent;
 }
 
+.search input:focus+.results {
+    display: block;
+    width: 300px
+}
 
-.search input:focus + .results { display: block ; width: 300px}
-
-.results:hover     { display: block !important; width: 300px}
-
+.results:hover {
+    display: block !important;
+    width: 300px
+}
 
 .search .results {
     display: none;
@@ -211,9 +250,17 @@ input#find{
     transition: all 1s;
 }
 
-.search .results li { display: block }
-.search .results li:first-child { margin-top: -1px }
-.search .results li:last-child { margin-bottom: -1px }
+.search .results li {
+    display: block
+}
+
+.search .results li:first-child {
+    margin-top: -1px
+}
+
+.search .results li:last-child {
+    margin-bottom: -1px
+}
 
 .search .results a {
     display: block;
@@ -233,38 +280,25 @@ input#find{
 }
 
 
-
 /* Nav bar end */
 
 
 /* slider start */
 
 
-
 /* .image-slider-sec{
      padding-top: 15em;    position sticky is there to no use of this
 } */
 
-.slider-img{
+.slider-img {
     color: white;
     text-align: center;
     background-color: black;
-height: 519px;
+    height: 519px;
 }
 
 
 /* slider end */
-
-.max-width-boxes {
-    max-width: 1200px;
-    margin: 0 auto
-}
-
-.flex-box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between
-}
 
 
 /*  */
@@ -294,11 +328,25 @@ height: 519px;
     background-color: #181818
 }
 
-.footer-1-main-box>div {
+.footer-1-main-box .max-width-boxes>div {
     width: 25%;
     padding-left: 20px;
     padding-right: 20px;
     vertical-align: top;
+}
+
+@media screen and (max-width: 700px) {
+    .flex-box-responsive {
+        display: block;
+        width: 100%;
+        padding: 10px;
+    }
+    .footer-1-main-box .max-width-boxes>div {
+        width: 100%;
+        padding: 0;
+        padding-block: 20px;
+        vertical-align: top;
+    }
 }
 
 .footer-1-section-1 p {
