@@ -39,6 +39,8 @@ body {
     padding: 24px 20px 28px;
     justify-content: center;
 }
+
+
 .div-img{
     display: inherit;
     justify-content: center;
@@ -64,9 +66,12 @@ body {
 .li-home{
     padding-left: 0%;
 }
-
-   
-
+.img-scroll-eff{
+transition: background 300ms, color 300ms, border-color 300ms, padding 200ms;
+-moz-transition: background 300ms, color 300ms, border-color 300ms, padding 200ms;
+-o-transition: background 300ms, color 300ms, border-color 300ms, padding 200ms;
+-webkit-transition: background 300ms, color 300ms, border-color 300ms, padding 200ms;
+}
 
 .main-nav-a{
     font-size: 16px;
@@ -83,6 +88,17 @@ body {
     flex-direction: row;
     padding: 0 18px;
 }
+
+.scroll-nav img{
+    height: 56px;
+}
+.scroll-nav .main-img{
+    padding: 8px 20px 6px;
+}
+.scroll-nav .main-nav{
+    padding: 20px 0;
+}
+
 
 
 /* nav search */

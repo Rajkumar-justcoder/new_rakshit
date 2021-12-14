@@ -1,5 +1,5 @@
 
-$(document).ready(function() {
+$(document).ready(function () {
     activate_image(1);
     scrollFunction();
 });
@@ -22,5 +22,12 @@ function activate_image(id) {
 // }
 // //   scroll effect on nav image end
 // this is on work so DNT 
-
-
+function scrollFunction() {
+    $(document).on('scroll', function () {
+        if ($(window).scrollTop()) {
+            $('.main-nav-sec').addClass('scroll-nav');
+        } else {
+            $('.main-nav-sec').removeClass('scroll-nav');
+        }
+    })
+}
