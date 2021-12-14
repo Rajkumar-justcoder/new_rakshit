@@ -1,5 +1,7 @@
+
 $(document).ready(function() {
     activate_image(1);
+    scrollFunction();
 });
 
 function activate_image(id) {
@@ -7,3 +9,18 @@ function activate_image(id) {
     $('#mission-tab-img').css('display', id === 2 ? 'block' : 'none');
     $('#history-tab-img').css('display', id === 3 ? 'block' : 'none');
 }
+
+
+// // scroll effect on nav image start
+
+// function scrollFunction() {
+//   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+//     document.getElementById("main-scroll-img").style.;
+//   } else {
+//     document.getElementById("main-scroll-img").style.scale = "90px";
+//   }
+// }
+// //   scroll effect on nav image end
+// this is on work so DNT 
+
+
