@@ -2,15 +2,48 @@ $(document).ready(function() {
     activate_image(1);
     scrollFunction();
 
+
+    let lengthK = document.getElementById('home-vision-head-tab').offsetHeight;
+    for (let i = 0; i < document.getElementsByClassName('img-section-switch').length; i++) {
+        document.getElementsByClassName('img-section-switch')[i].style.height = lengthK + 'px';
+    }
+
 });
 
 function activate_image(id) {
     $('#vision-tab-img').css('display', id === 1 ? 'block' : 'none');
     $('#mission-tab-img').css('display', id === 2 ? 'block' : 'none');
     $('#history-tab-img').css('display', id === 3 ? 'block' : 'none');
+    var contentChange = document.getElementsByClassName('gdlr-core-tab-item-content');
+    var contentChange2 = document.getElementsByClassName('gdlr-core-tab-item-title');
+    for (var i = 0; i < contentChange.length; i++) {
+        if (contentChange[i].classList.contains('gdlr-core-active')) {
+            contentChange[i].classList.remove('gdlr-core-active');
+            contentChange2[i].classList.remove('gdlr-core-active');
+        }
+    }
+    if (id === 1) {
+        contentChange[id - 1].classList.add('gdlr-core-active');
+        contentChange2[id - 1].classList.add('gdlr-core-active');
+    }
+    if (id === 2) {
+        contentChange[id - 1].classList.add('gdlr-core-active');
+        contentChange2[id - 1].classList.add('gdlr-core-active');
+    }
+    if (id === 3) {
+        contentChange[id - 1].classList.add('gdlr-core-active');
+        contentChange2[id - 1].classList.add('gdlr-core-active');
+    }
+
 }
 
-console.log(document.getElementById('home-vision-head-tab').offsetHeight);
+
+/* var contentChange = document.getElementsByClassName('gdlr-core-tab-item-content');
+for (var i = 0; i < contentChange.length; i++) {
+    contentChange[i].onclick = function(e) {
+        console.log(e.target);
+    }
+} */
 
 // // scroll effect on nav image start
 
