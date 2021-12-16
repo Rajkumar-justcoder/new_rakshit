@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(function() {
     activate_image(1);
     scrollFunction();
 
@@ -10,6 +10,7 @@ function activate_image(id) {
     $('#history-tab-img').css('display', id === 3 ? 'block' : 'none');
 }
 
+console.log(document.getElementById('home-vision-head-tab').offsetHeight);
 
 // // scroll effect on nav image start
 
@@ -24,7 +25,7 @@ function activate_image(id) {
 // this is on work so DNT 
 
 function scrollFunction() {
-    $(document).on('scroll', function () {
+    $(document).on('scroll', function() {
         if ($(window).scrollTop() > 50) {
             $('.main-nav-sec').addClass('scroll-nav');
         } else if ($(window).scrollTop() <= 50) {
@@ -51,7 +52,7 @@ function scrollFunction() {
 //          link[l].onmouseover=function (e) { 
 //              $('#sublink-of-main'+l).toggle('.nav-ul-hide');
 //           }
-         
+
 // }
 
 // $(function () {
