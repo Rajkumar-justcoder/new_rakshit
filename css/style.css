@@ -189,10 +189,6 @@ input#find {
 
 
 /* internal link of nav bar classed start  */
-.main-li-hover:hover .sub-nav{
-    display: block
-}
-
 .sub-nav {
     position: absolute;
     top: 90%;
@@ -201,17 +197,18 @@ input#find {
     list-style: none;
     padding: 12px 0;
     box-shadow: 0px 8px 34px -15px rgb(0, 0, 0);
+    display: none;
     min-width: 220px
 }
-.sub-nav li{
-    background-color: white !important;
-    padding: 1px 11px
+.main-li-hover:hover .sub-nav{
+    display: block
 }
 .nav-ul-hide{
     display: none
 }
-.sub-nav>li{
-    
+.sub-nav li{
+    background-color: white !important;
+    padding: 1px 11px;
     font-size: 14px
 }
 
@@ -223,16 +220,41 @@ input#find {
     color: #585858
     
 }
-.sub-nav-bg-a ul:hover{
+.sub-nav-li a:hover{
     background-color: #eeeeee;
     
-}
+} 
+
 
 .sub-nav-link > a::after{
 position: absolute;
 right: 19px;
 content: "\f105";
-font-family: fontAwesome;}
+font-family: fontAwesome;
+}
+
+
+.sub-nav-ul{
+    display: none
+}
+.sub-nav-link:hover .sub-nav-ul{
+    display: block
+}
+
+.sub-item{
+    position: absolute;
+    top: 0;
+    left: 100% ;
+    background-color: white !important;
+    margin-left: 0px;
+    z-index: 105;
+    list-style: none;
+    padding: 12px 0;
+    box-shadow: 0px 8px 34px -15px rgb(0, 0, 0);
+    min-width: 220px
+}
+
+
 
 /* #sublink-of-main{
     display: block;
