@@ -17,6 +17,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
 }
+a{text-decoration: none;}
 
 .max-width-boxes {
     max-width: 1200px;
@@ -114,7 +115,7 @@ body {
     display: inherit;
     list-style: none;
     flex-direction: row;
-    padding: 0 18px
+    padding: 2px 18px
 }
 
 .scroll-nav img {
@@ -138,7 +139,6 @@ input#find {
 
 .search {
     position: relative;
-    margin-top: -8px;
 }
 
 .search input {
@@ -187,6 +187,58 @@ input#find {
     color: #999;
 }
 
+
+/* internal link of nav bar classed start  */
+.main-li-hover:hover .sub-nav{
+    display: block
+}
+
+.sub-nav {
+    position: absolute;
+    top: 90%;
+    background-color: white !important;
+    z-index: 105;
+    list-style: none;
+    padding: 12px 0;
+    box-shadow: 0px 8px 34px -15px rgb(0, 0, 0);
+    min-width: 220px
+}
+.sub-nav li{
+    background-color: white !important;
+    padding: 1px 11px
+}
+.nav-ul-hide{
+    display: none
+}
+.sub-nav>li{
+    
+    font-size: 14px
+}
+
+
+.sub-nav-li a{
+    display: block;
+    padding: 6px 30px 6px 12px;
+    position: relative;
+    color: #585858
+    
+}
+.sub-nav-bg-a ul:hover{
+    background-color: #eeeeee;
+    
+}
+
+.sub-nav-link > a::after{
+position: absolute;
+right: 19px;
+content: "\f105";
+font-family: fontAwesome;}
+
+/* #sublink-of-main{
+    display: block;
+} */
+
+/* internal link of nav bar classed end  */
 
 /* Demo 2 */
 
@@ -293,7 +345,7 @@ input#find {
 .slider-img {
     color: white;
     text-align: center;
-    background-color: black;
+    background-color: rgb(167, 131, 131);
     height: 519px;
 }
 
