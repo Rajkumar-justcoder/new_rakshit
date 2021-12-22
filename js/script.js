@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(function() {
     activate_image(1);
     scrollFunction();
 
@@ -58,7 +58,7 @@ for (var i = 0; i < contentChange.length; i++) {
 // this is on work so DNT 
 
 function scrollFunction() {
-    $(document).on('scroll', function () {
+    $(document).on('scroll', function() {
         if ($(window).scrollTop() > 50) {
             $('.main-nav-sec').addClass('scroll-nav');
         } else if ($(window).scrollTop() <= 50) {
@@ -88,7 +88,7 @@ function showSlides(n) {
     if (n > slides.length) { slideIndex = 1 }
     if (n < 1) { slideIndex = slides.length }
 
-    
+
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
@@ -98,3 +98,96 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     inext[slideIndex - 1].className += " active";
 }
+
+
+
+
+
+
+
+
+
+var branch_names = {
+    "AM": "Applied Mechanics and Hydraulics",
+    "CH": "Chemical Engineering",
+    "CY": "Chemistry",
+    "CV": "Civil Engineering",
+    "CSE": "Computer Science and Engineering",
+    "EEE": "Electrical and Electronics Engineering",
+    "ECE": "Electronics and Communication Engineering",
+    "MBA": "School of Management",
+    "IT": "Information Technology",
+    "MCA": "Mathematical and Computational Sciences",
+    "ME": "Mechanical Engineering",
+    "MT": "Metallurgical and Materials Engineering",
+    "MN": "Mining Engineering",
+    "PH": "Physics",
+}
+var options = {
+    chart: {
+        type: 'bar',
+        height: 350,
+        stacked: true,
+        toolbar: {
+            show: true
+        },
+        zoom: {
+            enabled: true
+        }
+    },
+    responsive: [{
+        breakpoint: 480,
+        options: {
+            legend: {
+                position: 'bottom',
+                offsetX: -10,
+                offsetY: 0
+            }
+        }
+    }],
+    plotOptions: {
+        bar: {
+            horizontal: false,
+        },
+    },
+    series: [{
+        name: 'Placements',
+        data: [86.4, 87.9, 87.9, 79.4, 84.4, 89.3, 89.6, 93.0, 100]
+    }, {
+        name: 'Higher Studies',
+        data: [
+            11.6, 8.9, 11.6, 14.4, 11.0, 5.5, 0, 0, 0
+        ]
+    }, ],
+    xaxis: {
+        categories: ["UG 2017", "UG 2018", "UG 2019", "PG 2017", "PG 2018", "PG 2019", "MCA 2017", "MCA 2018", "MCA 2019"],
+    },
+    yaxis: {
+        max: 100,
+        title: {
+            text: 'Percentage of Students'
+        }
+    },
+    fill: {
+        opacity: 1
+
+    },
+    tooltip: {
+        onDatasetHover: {
+            highlightDataSeries: true,
+        },
+        y: {
+            formatter: function(val, { series, seriesIndex, dataPointIndex, w }) {
+                return val;
+            },
+
+        }
+    }
+}
+
+var chart = new ApexCharts(
+    document.querySelector("#chart"),
+    options
+);
+
+chart.render();
