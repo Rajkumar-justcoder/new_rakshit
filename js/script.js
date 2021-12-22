@@ -34,39 +34,52 @@ function scrollFunction() {
     })
 }
 
-// $('.main-li-hover').hover(function () {
-
-//     $('#sublink-of-main4').toggle('.nav-ul-hide');
 
 
-// });
 
 
-//  $li.toggle('.nav-ul-hide');
-// var link=document.getElementsByClassName('main-li-hover');
-// console.log(link);
-// for (let l = 0; l < link.length; l++) {
-//         // link[l].hover(function () {
-//         //     $('#sublink-of-main'+l).toggle('.nav-ul-hide');
-//         //  }); 
-//          link[l].onmouseover=function (e) { 
-//              $('#sublink-of-main'+l).toggle('.nav-ul-hide');
-//           }
+const items = document.querySelectorAll('img');
+    const itemCount = items.length;
+    const nextItem = document.querySelector('.next');
+    const previousItem = document.querySelector('.previous');
+    let count = 0;
 
-// }
+    function showNextItem() {
+      items[count].classList.remove('active');
 
-// $(function () {
-//     $('.nav-ul-hover > .main-li-hover, .sub-nav > li').hover(
-//         function () {  
-//             var submenu = $(this).find('ul.sub-nav');
-//             if (submenu.hasClass('sub-nav')) {
-//                 submenu.removeClass('nav-ul-hide');
-//             }
-//         },
-//         function () {
-//             var submenu = $(this).find('ul.sub-nav');
-//             if (submenu.hasClass('sub-nav')) {
-//                 submenu.addClass('nav-ul-hide');
-//             }
-//         });
-// });
+      if (count < itemCount - 1) {
+        count++;
+      } else {
+        count = 0;
+      }
+
+      items[count].classList.add('active');
+      console.log(count);
+    }
+
+    function showPreviousItem() {
+      items[count].classList.remove('active');
+
+      if (count > 0) {
+        count--;
+      } else {
+        count = itemCount - 1;
+      }
+
+      items[count].classList.add('active');
+      console.log(count);
+    }
+
+    function keyPress(e) {
+      e = e || window.event;
+
+      if (e.keyCode == '37') {
+        showPreviousItem();
+      } else if (e.keyCode == '39') {
+        showNextItem();
+      }
+    }
+
+    nextItem.addEventListener('mouseover', showNextItem);
+    previousItem.addEventListener('mouseover', showPreviousItem);
+    document.addEventListener('keydown', keyPress);
