@@ -8,7 +8,8 @@
     <title>Rakshit Bhaiya</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <style>
@@ -17,26 +18,26 @@
             background-color: white;
             /* Required for smooth transition between tabs */
         }
-        
+
         #home-vision-vision_id {
             background-image: url("https://www.nitk.ac.in/design-system/About-images/lighthouse.jpg");
         }
-        
+
         #home-vision-mission_id {
             background-image: url("https://www.nitk.ac.in/design-system/About-images/placement.jpg");
         }
-        
+
         #home-vision-history_id {
             background-image: url("https://www.nitk.ac.in/design-system/About-images/MB.jpg");
         }
-        
+
         #home-vision-tab_content {
             background: #EFEFEF;
             width: auto;
             height: 370px;
             padding: 25px;
         }
-        
+
         #home-vision-tab_data {
             text-transform: none;
             color: #000000;
@@ -47,7 +48,7 @@
             padding-right: 1.6em;
             padding-left: 1em;
         }
-        
+
         #home-vision-head-tab .gdlr-core-tab-item-title {
             background: white;
             padding: 15px 45px;
@@ -55,16 +56,16 @@
             cursor: pointer;
             color: var(--text-color-5)
         }
-        
+
         #home-vision-head-tab .gdlr-core-active {
             background: #EFEFEF;
             color: var(--text-color-4);
         }
-        
+
         #home-vision-tab_data::-webkit-scrollbar {
             width: 6px;
         }
-        
+
         #home-vision-tab_data::-webkit-scrollbar-thumb {
             background-color: rgb(190, 190, 190);
         }
@@ -263,10 +264,99 @@
     </div>
     <section class="image-slider-sec">
         <div class="slider">
-            <div class="slider-img">
-                slider and this is for test to see the nav bar <br> and different between section <br> and hight is same as image
-            </div>
+            <img class="sli-img active" src="https://www.nitk.ac.in/images/b1.jpg">
+            <img class="sli-img" src="https://www.nitk.ac.in/images/b3.jpg">
+            <img class="sli-img" src="https://www.nitk.ac.in/images/b2.jpg">
+            <img class="sli-img" src="https://www.nitk.ac.in/images/b4.jpg">
+            <img class="sli-img" src="https://www.nitk.ac.in/images/b5.jpg">
         </div>
+
+        <a class="prevbtn" onclick="plusSlides(-1)"><span class="pspan"></span></a>
+        <a class="nextbtn" onclick="plusSlides(1)"><span class="nspan"></span></a>
+
+        <nav class="slider-nav flex-box">
+            <ul>
+                <li onmouseenter="currentSlide(1)" class="next">
+                    <div class="main-slide-sec">
+                        <div class="inner-slide-div">
+                            <div class="i-slide-main" id="div_1dd7_5">
+                                <div class="side-i-img"><img
+                                        src="https://www.nitk.ac.in/design-system/upload/icon-2.png" alt="" width="44"
+                                        height="40" title="icon-2"></div>
+                                <div class="slide-i-main">
+                                    <div class="slide-i-div">
+                                            <h3 class="slide-h3">Academics</h3>
+                                        <div class="slide-h-text" id="div_1dd7_6">
+                                            Leading the pack
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li  onmouseenter="currentSlide(2)" class="next">
+                    <div class="main-slide-sec">
+                        <div class="inner-slide-div">
+                            <div class="i-slide-main" id="div_1dd7_5">
+                                <div class="side-i-img"><img
+                                        src="https://www.nitk.ac.in/design-system/upload/icon-4.png" alt="" width="44"
+                                        height="40" title="icon-4"></div>
+                                <div class="slide-i-main">
+                                    <div class="slide-i-div">
+                                    <h3 class="slide-h3">Research</h3>
+                                        <div class="slide-h-text" id="div_1dd7_6">
+                                            The Hub of Innovation
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+                <li onmouseenter="currentSlide(3)" class="next">
+                    <div class="main-slide-sec">
+                        <div class="inner-slide-div">
+                            <div class="i-slide-main" id="div_1dd7_5">
+                                <div class="side-i-img"><img
+                                        src="https://www.nitk.ac.in/design-system/upload/icon-1.png" alt="" width="44"
+                                        height="40" title="icon-"></div>
+                                <div class="slide-i-main">
+                                    <div class="slide-i-div">
+                                    <h3 class=" slide-h3">Campus</h3>
+                                        <div class="slide-h-text" id="div_1dd7_6">
+                                            To Nurture Greatness
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+                <li onmouseenter="currentSlide(4)" class="next" >
+                    <div class="main-slide-sec">
+                        <div class="inner-slide-div">
+                            <div class="i-slide-main" id="div_1dd7_5">
+                                <div class="side-i-img"><img
+                                        src="https://www.nitk.ac.in/design-system/upload/icon-3.png" alt="" width="44"
+                                        height="40" title="icon-3"></div>
+                                <div class="slide-i-main">
+                                    <div class="slide-i-div">
+                                    <h3 class=" slide-h3">Culture</h3>
+                                        <div class="slide-h-text" id="div_1dd7_6">
+                                            The NITK Way
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+            </ul>
+        </nav>
     </section>
 
 
@@ -279,7 +369,8 @@
             <div class="flex-box">
                 <div class="" style="width: 30%;">
                     <div class="img-section-switch" id="vision-tab-img" data-tab-id="1 ">
-                        <a class="gdlr-core-lightgallery gdlr-core-js " href="https://www.youtube.com/watch?v=71jKkD5Ol8E ">
+                        <a class="gdlr-core-lightgallery gdlr-core-js "
+                            href="https://www.youtube.com/watch?v=71jKkD5Ol8E ">
                             <span class="gdlr-core-tab-item-image-background" id="home-vision-vision_id"></span>
                             <i class="fa fa-play "></i>
                         </a>
@@ -294,7 +385,8 @@
 
                 <div style="width: 70%;" id="home-vision-head-tab">
                     <div class="flex-box" style="justify-content:flex-start;">
-                        <div class="gdlr-core-tab-item-title gdlr-core-active" data-tab-id="1" onclick="activate_image(1)">Vision</div>
+                        <div class="gdlr-core-tab-item-title gdlr-core-active" data-tab-id="1"
+                            onclick="activate_image(1)">Vision</div>
                         <div class="gdlr-core-tab-item-title" data-tab-id="2" onclick="activate_image(2)">Mission</div>
                         <div class="gdlr-core-tab-item-title" data-tab-id="3" onclick="activate_image(3)">History</div>
                     </div>
@@ -303,46 +395,63 @@
                         <div class="gdlr-core-tab-item-content" data-tab-id="1" id="home-vision-tab_content">
                             <div class="">
                                 <div class="">
-                                    <h3 class="" id="h3_1dd7_32" style="font-size: 23px; ">Vision<span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider "></span>
+                                    <h3 class="" id="h3_1dd7_32" style="font-size: 23px; ">Vision<span
+                                            class="gdlr-core-title-item-title-divider gdlr-core-skin-divider "></span>
                                     </h3>
                                 </div>
                             </div>
                             <div id="home-vision-tab_data">
-                                <p style="margin-bottom: 0;padding-bottom: 0;">To facilitate transformation of students into good human beings, responsible citizens and competent professionals, focusing on the assimilation, generation and dissemination of knowledge.
+                                <p style="margin-bottom: 0;padding-bottom: 0;">To facilitate transformation of students
+                                    into good human beings, responsible citizens and competent professionals, focusing
+                                    on the assimilation, generation and dissemination of knowledge.
                                 </p>
                             </div>
                         </div>
                         <div class="gdlr-core-tab-item-content" data-tab-id="2" id="home-vision-tab_content">
                             <div class="">
                                 <div class="">
-                                    <h3 class="" id="h3_1dd7_32" style="font-size: 23px; ">Mission<span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider "></span>
+                                    <h3 class="" id="h3_1dd7_32" style="font-size: 23px; ">Mission<span
+                                            class="gdlr-core-title-item-title-divider gdlr-core-skin-divider "></span>
                                     </h3>
                                 </div>
                             </div>
                             <div id="home-vision-tab_data">
-                                <p>Impart quality education to meet the needs of profession and society, and achieve excellence in teaching-learning and research.
+                                <p>Impart quality education to meet the needs of profession and society, and achieve
+                                    excellence in teaching-learning and research.
                                 </p>
-                                <p>Attract and develop talented and committed human resources, and provide an environment conducive to innovation, creativity, team-spirit and entrepreneurial leadership.
+                                <p>Attract and develop talented and committed human resources, and provide an
+                                    environment conducive to innovation, creativity, team-spirit and entrepreneurial
+                                    leadership.
                                 </p>
-                                <p>Facilitate effective interactions among faculty and students, and foster networking with alumni, industries, institutions and other stake-holders.
+                                <p>Facilitate effective interactions among faculty and students, and foster networking
+                                    with alumni, industries, institutions and other stake-holders.
                                 </p>
-                                <p style="margin-bottom: 0;padding-bottom: 0; ">Practice and promote high standards of professional ethics, transparency and accountability.
+                                <p style="margin-bottom: 0;padding-bottom: 0; ">Practice and promote high standards of
+                                    professional ethics, transparency and accountability.
                                 </p>
                             </div>
                         </div>
                         <div class="gdlr-core-tab-item-content" data-tab-id="3" id="home-vision-tab_content">
                             <div class="">
                                 <div class=" ">
-                                    <h3 class="" id="h3_1dd7_32" style="font-size: 23px; ">History<span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider "></span>
+                                    <h3 class="" id="h3_1dd7_32" style="font-size: 23px; ">History<span
+                                            class="gdlr-core-title-item-title-divider gdlr-core-skin-divider "></span>
                                     </h3>
                                 </div>
                             </div>
                             <div id="home-vision-tab_data ">
-                                <p>National Institute of Technology Karnataka, Surathkal is located in Mangalore City, Karnataka State, India. The Institute was established as Karnataka Regional Engineering College (KREC) in 1960, and upgraded as National
+                                <p>National Institute of Technology Karnataka, Surathkal is located in Mangalore City,
+                                    Karnataka State, India. The Institute was established as Karnataka Regional
+                                    Engineering College (KREC) in 1960, and upgraded as National
                                     Institute of Technology Karnataka (NITK) in 2002.
                                 </p>
-                                <p style="margin-bottom: 0;padding-bottom: 0; ">Mangalore is the headquarters of the coastal district of Dakshina Kannada, and boasts an important centre of education, business and trade in the state. Sri. U. Srinivasa Mallya, a visionary and a philanthropist, contributed
-                                    immensely to the development of the coastal region of Karnataka, and his effort towards establishment of KREC (now NITK) is the most significant one. In recognition of his role as the founder and architect of the institute,
+                                <p style="margin-bottom: 0;padding-bottom: 0; ">Mangalore is the headquarters of the
+                                    coastal district of Dakshina Kannada, and boasts an important centre of education,
+                                    business and trade in the state. Sri. U. Srinivasa Mallya, a visionary and a
+                                    philanthropist, contributed
+                                    immensely to the development of the coastal region of Karnataka, and his effort
+                                    towards establishment of KREC (now NITK) is the most significant one. In recognition
+                                    of his role as the founder and architect of the institute,
                                     the campus premises is named after him as Srinivasnagar.
                                 </p>
                             </div>
@@ -382,7 +491,8 @@
                                 <li class="menu-item "><a target="_blank " href="# ">Guest House (GH)</a></li>
                                 <li class="menu-item "><a target="_blank " href="# ">Health Care Centre (HCC)</a></li>
                                 <li class="menu-item "><a target="_blank " href="# ">Library</a></li>
-                                <li class="menu-item "><a target="_blank " href="# " title="Science & Technology Entrepreneurs ' Park">STEP</a></li>
+                                <li class="menu-item "><a target="_blank " href="# "
+                                        title="Science & Technology Entrepreneurs ' Park">STEP</a></li>
                                 <li class="menu-item"><a target="_blank" href="#">Virtual Tour</a></li>
                             </ul>
                         </div>

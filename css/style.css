@@ -123,9 +123,9 @@ a {
     padding: 2px 18px
 }
 
-.scroll-nav {
+/* .scroll-nav {
     max-height: ;
-}
+} */
 
 .scroll-nav img {
     height: 56px
@@ -387,11 +387,144 @@ input#find {
      padding-top: 15em;    position sticky is there to no use of this
 } */
 
-.slider-img {
-    color: white;
-    text-align: center;
-    background-color: rgb(167, 131, 131);
+.slider {
     height: 519px;
+    width: 100%;
+}
+.slider-nav{
+    justify-content: center;
+    margin: -43px auto 0px auto;
+}
+.prevbtn,
+.nextbtn {
+    width: auto;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    user-select: none;
+    -webkit-user-select: none;
+    border-width: 10px 10px 10px 0;
+    display: block;
+    background: rgba(0,0,0,0.5);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99000000',endColorstr='#99000000');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99000000', endColorstr='#99000000')";
+    border: 1px solid #777;
+    border-left: 0;
+    border-radius: 0 4px 4px 0;
+    position: absolute;
+    padding: 20px 20px 20px 17px;
+    top: 45%;
+    cursor: pointer;
+}
+.pspan,.nspan{
+    border-color: transparent #fff transparent;
+    border-style: solid;
+    display: block;
+}
+.pspan{
+    border-width: 10px 10px 10px 0;
+}
+.nspan{
+border-width: 10px 0 10px 10px;
+}
+
+/* Position the "next button" to the right */
+.nextbtn {
+  right: 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.slider img {
+    max-width: 100%;
+    min-width: 100%;
+    height: 100%;
+    display: none;
+    box-shadow: 10px 10px 20px 0 rgba(94, 47, 59, 0.2);
+}
+
+.slider img.active {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  -webkit-animation: fadeImg 0.8s;
+  animation: fadeImg 0.8s;
+}
+.main-slide-sec{
+    width: 100%;
+}
+.slider-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 70%;
+    background-color: white;
+    justify-content: center;
+    box-shadow: 0 -6px 24px rgb(10 10 10 / 25%);
+    -moz-box-shadow: 0 -6px 24px rgba(10, 10, 10, 0.25);
+    -webkit-box-shadow: 0 -6px 24px rgb(10 10 10 / 25%);
+    z-index: 3;
+
+}
+
+.slider-nav li {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 52px 0px 0px 66px;
+}
+.slider-nav li:hover{
+box-shadow: 0 -6px 24px rgb(10 10 10 / 25%) ;
+    -moz-box-shadow: 0 -6px 24px rgba(10, 10, 10, 0.25);
+    -webkit-box-shadow: 0 -6px 24px rgb(10 10 10 / 25%) 
+}
+.i-slide-main{
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 16px;
+}
+.side-i-img{
+    margin-right: 25px;
+}
+.slide-h3{
+    font-size: 18px;
+    font-weight: 600;
+}
+.slide-h-text{
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    color: #747474;
+    margin-top: 5px;
+}
+
+
+
+@-webkit-keyframes fadeImg {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeImg {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+.inner-slide-div{
+    background-color: white;
+    height: auto;
+    width: 100%;
 }
 
 
