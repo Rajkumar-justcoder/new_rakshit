@@ -39,12 +39,13 @@ a {
 .parrent-main {
     position: sticky;
     top: 0;
+    z-index: 1000;
     /* border-bottom: 1px solid #ccc; */
-    box-shadow: 0px 0px 10px -2px #ccc;
+    box-shadow: 0px 0px 10px -2px var(--text-color-3);
 }
 
 .main-nav-sec {
-    background-color: white;
+    background-color: var(--text-color-1);
     position: relative;
     height: 210px;
     transition: all 0.3s ease-in-out
@@ -151,7 +152,7 @@ input#find {
 
 .search input {
     outline: none;
-    border: white;
+    border: var(--text-color-1);
 }
 
 .search input[type=search] {
@@ -180,7 +181,7 @@ input#find {
 
 .search input[type=search]:focus {
     width: 130px;
-    background-color: #fff;
+    background-color: var(--text-color-1);
     border-color: #66CC75;
     -webkit-box-shadow: 0 0 5px rgba(109, 207, 246, .5);
     -moz-box-shadow: 0 0 5px rgba(109, 207, 246, .5);
@@ -201,7 +202,7 @@ input#find {
 .sub-nav {
     position: absolute;
     top: 90%;
-    background-color: white !important;
+    background-color: var(--text-color-1) !important;
     z-index: 105;
     list-style: none;
     padding: 12px 0;
@@ -290,7 +291,7 @@ input#find {
     width: 15px;
     padding-left: 10px;
     color: transparent;
-    cursor: pointer;
+    cursor: pointer
 }
 
 .search input[type=search]:hover {
@@ -500,24 +501,15 @@ input#find {
 }
 
 .img-section-switch {
-    /* min-height: 300px; */
     position: relative;
 }
 
 .gdlr-core-tab-item-content {
-    min-height: 300px;
+    /* height: 275px !important; */
 }
 
 .gdlr-core-pbf-wrapper-content>div {
     position: relative;
-}
-
-.gdlr-core-pbf-wrapper-content a {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
 }
 
 .gdlr-core-tab-item-image-background {
