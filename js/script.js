@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
     activate_image(1);
     scrollFunction();
 
@@ -58,7 +58,7 @@ for (var i = 0; i < contentChange.length; i++) {
 // this is on work so DNT 
 
 function scrollFunction() {
-    $(document).on('scroll', function() {
+    $(document).on('scroll', function () {
         if ($(window).scrollTop() > 50) {
             $('.main-nav-sec').addClass('scroll-nav');
         } else if ($(window).scrollTop() <= 50) {
@@ -68,51 +68,33 @@ function scrollFunction() {
 }
 
 
+var slideIndex = 1;
+showSlides(slideIndex);
 
+// Next/previous controls
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
 
+// Thumbnail image controls
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
 
-const items = document.querySelectorAll('img');
-    const itemCount = items.length;
-    const nextItem = document.querySelector('.next');
-    const previousItem = document.querySelector('.previous');
-    let count = 0;
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("sli-img");
+    var inext = document.getElementsByClassName("next");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
 
-    function showNextItem() {
-      items[count].classList.remove('active');
-
-      if (count < itemCount - 1) {
-        count++;
-      } else {
-        count = 0;
-      }
-
-      items[count].classList.add('active');
-      console.log(count);
+    
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
     }
-
-    function showPreviousItem() {
-      items[count].classList.remove('active');
-
-      if (count > 0) {
-        count--;
-      } else {
-        count = itemCount - 1;
-      }
-
-      items[count].classList.add('active');
-      console.log(count);
+    for (i = 0; i < inext.length; i++) {
+        inext[i].className = inext[i].className.replace(" active", "");
     }
-
-    function keyPress(e) {
-      e = e || window.event;
-
-      if (e.keyCode == '37') {
-        showPreviousItem();
-      } else if (e.keyCode == '39') {
-        showNextItem();
-      }
-    }
-
-    nextItem.addEventListener('mouseover', showNextItem);
-    previousItem.addEventListener('mouseover', showPreviousItem);
-    document.addEventListener('keydown', keyPress);
+    slides[slideIndex - 1].style.display = "block";
+    inext[slideIndex - 1].className += " active";
+}
