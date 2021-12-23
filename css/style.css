@@ -32,7 +32,16 @@ a {
     flex-wrap: wrap;
     justify-content: space-between
 }
+/* nav title start  */
 
+title-main{
+    background-color: #192f59;
+    height: auto;
+    width: auto;
+}
+
+
+/* nav title end  */
 
 /* Nav bar start */
 
