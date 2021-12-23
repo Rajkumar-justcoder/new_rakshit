@@ -4,8 +4,8 @@ $(document).ready(function() {
 
 
     let lengthK = document.getElementById('home-vision-head-tab').offsetHeight;
-    for (let i = 0; i < document.getElementsByClassName('img-section-switch').length; i++) {
-        document.getElementsByClassName('img-section-switch')[i].style.height = lengthK + 'px';
+    for (let i = 0; i < document.getElementsByClassName('main-sec-img-switch').length; i++) {
+        document.getElementsByClassName('main-sec-img-switch')[i].style.height = lengthK + 'px';
     }
 
 });
@@ -14,31 +14,31 @@ function activate_image(id) {
     $('#vision-tab-img').css('display', id === 1 ? 'block' : 'none');
     $('#mission-tab-img').css('display', id === 2 ? 'block' : 'none');
     $('#history-tab-img').css('display', id === 3 ? 'block' : 'none');
-    var contentChange = document.getElementsByClassName('gdlr-core-tab-item-content');
-    var contentChange2 = document.getElementsByClassName('gdlr-core-tab-item-title');
+    var contentChange = document.getElementsByClassName('main-data-item');
+    var contentChange2 = document.getElementsByClassName('tab-title-div');
     for (var i = 0; i < contentChange.length; i++) {
-        if (contentChange[i].classList.contains('gdlr-core-active')) {
-            contentChange[i].classList.remove('gdlr-core-active');
-            contentChange2[i].classList.remove('gdlr-core-active');
+        if (contentChange[i].classList.contains('tab-title-active')) {
+            contentChange[i].classList.remove('tab-title-active');
+            contentChange2[i].classList.remove('tab-title-active');
         }
     }
     if (id === 1) {
-        contentChange[id - 1].classList.add('gdlr-core-active');
-        contentChange2[id - 1].classList.add('gdlr-core-active');
+        contentChange[id - 1].classList.add('tab-title-active');
+        contentChange2[id - 1].classList.add('tab-title-active');
     }
     if (id === 2) {
-        contentChange[id - 1].classList.add('gdlr-core-active');
-        contentChange2[id - 1].classList.add('gdlr-core-active');
+        contentChange[id - 1].classList.add('tab-title-active');
+        contentChange2[id - 1].classList.add('tab-title-active');
     }
     if (id === 3) {
-        contentChange[id - 1].classList.add('gdlr-core-active');
-        contentChange2[id - 1].classList.add('gdlr-core-active');
+        contentChange[id - 1].classList.add('tab-title-active');
+        contentChange2[id - 1].classList.add('tab-title-active');
     }
 
 }
 
 
-/* var contentChange = document.getElementsByClassName('gdlr-core-tab-item-content');
+/* var contentChange = document.getElementsByClassName('main-data-item');
 for (var i = 0; i < contentChange.length; i++) {
     contentChange[i].onclick = function(e) {
         console.log(e.target);
