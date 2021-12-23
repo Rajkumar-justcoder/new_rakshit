@@ -34,10 +34,40 @@ a {
 }
 /* nav title start  */
 
-title-main{
+.title-nav{
     background-color: #192f59;
     height: auto;
     width: auto;
+}
+.title-main{
+    display: flex;
+    width: 100%;
+}
+.main-title-nav-sec{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.main-nav-inner{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.title-nav-left{
+    display: flex;
+    width: 100%;
+}
+.title-nav-right{
+    display: flex;
+    width: 100%;
+}
+
+
+.title-sub-menu{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    list-style: none;
 }
 
 
