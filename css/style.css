@@ -36,12 +36,20 @@ a {
 
 .title-nav{
     background-color: #192f59;
-    height: auto;
+    height: 52px;
     width: auto;
+    color: #96a2b8;
+}
+.title-nav a{
+    color: #919bad;
+}
+.title-nav a:hover{
+    color: #ffffff;
 }
 .title-main{
     display: flex;
     width: 100%;
+    height: inherit;
 }
 .main-title-nav-sec{
     width: 100%;
@@ -51,18 +59,43 @@ a {
 .main-nav-inner{
     width: 100%;
     display: flex;
+    align-items: center;
     flex-direction: row;
+    font-size: 15px;
 }
 .title-nav-left{
     display: flex;
+    align-items: center;
     width: 100%;
+}
+#translate{
+    cursor: pointer !important;
+}
+
+.flan {
+    font-size: 15px;
+    color: #96a2b8;
+    margin-right: 8px;
+}
+
+.fenv,.fpho {
+    font-size: 15px;
+    color: #96a2b8;
+    margin-left: 18px;
+    margin-right: 6px;
 }
 .title-nav-right{
     display: flex;
     width: 100%;
 }
-
-
+.title-a{
+margin-right: 16px;
+cursor: pointer !important;
+}
+.support-link{
+    cursor: pointer !important;
+    
+}
 .title-sub-menu{
     display: flex;
     width: 100%;
