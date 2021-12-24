@@ -23,7 +23,7 @@ a {
 }
 
 .max-width-boxes {
-    max-width: 1200px;
+    max-width: 1240px;
     margin: 0 auto
 }
 
@@ -682,17 +682,34 @@ input#find {
 /* ranking sec start  */
 .sec-of-ranks{
     justify-content: flex-start;
+    padding: 80px 0 20px 0;
 }
 
 .divider-line-sec{
     font-size: 24px;
     border-bottom-width: 3px;
     overflow: hidden;
-    width: 100%;
-    margin-left: 109px;
+    width: 72px;
     border-bottom-style: solid;
     border-color: #e6e6e6;
+    margin-left: 53%;
+    margin-top: -18px;
 }
+.news-divider{
+    width: 167px;
+}
+.ann-divider{
+    width: 142px;
+}
+
+
+.inner-main-rank,.inner-main-news,.inner-main-ann{
+    width: 100%;
+}
+.inner-rank-title{
+    width: 100%;
+}
+
 
 .rank-main{
     width: 25%;
@@ -703,8 +720,35 @@ input#find {
 .ann-main{
     width: 35%;
 }
+.rank-title-sec-div{
+    margin: 14px 0 0 20px;
+}
+
+.rank-h1{
+    font-size: 22px;
+    font-style: normal;
+    text-transform: none;
+    letter-spacing: 0px;
+    color: #163269;
+}
+
+
+
+
+.title-sec-content{
+    padding-top: 35px;
+}
+
 /* ranking sec end  */
 
+
+/* upworks section start  */
+
+.up-sec-main{
+    padding-top: 30px;
+}
+
+/* upworks section end  */
 
 
 /*  */
