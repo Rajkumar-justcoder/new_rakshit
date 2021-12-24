@@ -34,10 +34,138 @@ a {
 }
 /* nav title start  */
 
-title-main{
+.title-nav{
     background-color: #192f59;
-    height: auto;
+    height: 52px;
     width: auto;
+    color: #96a2b8;
+}
+.title-nav a{
+    color: #919bad;
+}
+.title-nav a:hover{
+    color: #ffffff;
+}
+.title-main{
+    display: flex;
+    width: 100%;
+    height: inherit;
+}
+.main-title-nav-sec{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.main-nav-inner{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-size: 15px;
+}
+.title-nav-left{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+#translate{
+    cursor: pointer !important;
+}
+
+.flan {
+    font-size: 15px;
+    color: #96a2b8;
+    margin-right: 8px;
+}
+
+.fenv,.fpho {
+    font-size: 15px;
+    color: #96a2b8;
+    margin-left: 18px;
+    margin-right: 6px;
+}
+.tail-head{
+    list-style: none;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden; 
+    z-index: 1005;
+    min-width: 207px;
+    padding-top: 18px;
+    padding-left: 0;
+    margin-left: -17px;
+    font-size: 13px;
+    transition: all 0.3s ease-in-out
+}
+.tail-head a{
+    color: #585858;
+}
+.tail-head a:hover{
+    color: #585858;
+}
+.li-style{
+    padding: 0px 18px 10px;
+}
+.li-style-2{
+    padding: 0px 18px 10px;
+}
+.only-this-li{
+    padding-top: 10px;
+}
+.li-hover-title:hover .tail-head{
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.link-over{
+    position: absolute;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    list-style: none;
+    min-width: 220px;
+    margin-top: -30px;
+    font-size: 13px;
+    transition: all 0.3s ease-in-out;
+    margin-left: 135px
+}
+
+.link-over-main:hover .link-over{
+    opacity: 1 !important;
+    visibility:visible !important;
+} 
+
+.nav-arow>a::after {
+    position: absolute;
+    margin-left: 8px;
+    margin-top: 3px;
+    content: "\f105";
+    font-family: fontAwesome
+}
+
+
+
+.title-nav-right{
+    display: flex;
+    width: 100%;
+}
+.title-a{
+margin-right: 16px;
+cursor: pointer !important;
+}
+
+.support-link{
+    cursor: pointer !important;
+    color: #fff !important;
+    background-color: #3db166;
+    padding: 18px 0px 18px;
+    font-weight: bold;
+}
+
+.title-sub-menu{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    list-style: none;
 }
 
 
