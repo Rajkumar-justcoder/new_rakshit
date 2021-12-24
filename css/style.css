@@ -680,25 +680,29 @@ input#find {
 
 
 /* ranking sec start  */
+.sec-of-ranks{
+    justify-content: flex-start;
+}
+
 .divider-line-sec{
     font-size: 24px;
     border-bottom-width: 3px;
     overflow: hidden;
+    width: 100%;
+    margin-left: 109px;
     border-bottom-style: solid;
-
-    padding-top: 0.6em;
     border-color: #e6e6e6;
 }
-.inner-rank-title{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-.inner-sec-rank{
-    justify-content: space-around !important;
-    width: 100%;
-}
 
+.rank-main{
+    width: 25%;
+}
+.news-main{
+    width: 40%;
+}
+.ann-main{
+    width: 35%;
+}
 /* ranking sec end  */
 
 
