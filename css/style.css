@@ -679,6 +679,30 @@ input#find {
 /* slider end */
 
 
+/* ranking sec start  */
+.divider-line-sec{
+    font-size: 24px;
+    border-bottom-width: 3px;
+    overflow: hidden;
+    border-bottom-style: solid;
+
+    padding-top: 0.6em;
+    border-color: #e6e6e6;
+}
+.inner-rank-title{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.inner-sec-rank{
+    justify-content: space-around !important;
+    width: 100%;
+}
+
+/* ranking sec end  */
+
+
+
 /*  */
 
 #home-vision-head-tab {
