@@ -8,8 +8,7 @@
     <title>Rakshit Bhaiya</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <style>
@@ -18,26 +17,26 @@
             background-color: white;
             /* Required for smooth transition between tabs */
         }
-
+        
         #img-vision-id {
             background-image: url("https://www.nitk.ac.in/design-system/About-images/lighthouse.jpg");
         }
-
+        
         #img-mission-id {
             background-image: url("https://www.nitk.ac.in/design-system/About-images/placement.jpg");
         }
-
+        
         #img-history-id {
             background-image: url("https://www.nitk.ac.in/design-system/About-images/MB.jpg");
         }
-
+        
         #tab-main-vison-id {
             background: #EFEFEF;
             width: auto;
             height: 370px;
             padding: 25px;
         }
-
+        
         #home-vision-tab_data {
             text-transform: none;
             color: #000000;
@@ -46,7 +45,7 @@
             width: auto;
             overflow-y: scroll;
         }
-
+        
         #home-vision-head-tab .tab-title-div {
             background: white;
             padding: 15px 45px;
@@ -54,26 +53,40 @@
             cursor: pointer;
             color: var(--text-color-5)
         }
-
+        
         #home-vision-head-tab .tab-title-active {
             background: #EFEFEF;
             color: var(--text-color-4);
         }
-
+        
         #home-vision-tab_data::-webkit-scrollbar {
             width: 6px;
         }
-
+        
         #home-vision-tab_data::-webkit-scrollbar-thumb {
             background-color: rgb(190, 190, 190);
         }
-
+        
+        .tweet-header {
+            margin-bottom: 3em;
+        }
+        
+        .tweet-head {
+            font-size: 22px;
+            font-weight: 700;
+            text-transform: none;
+            letter-spacing: 0px;
+            color: #182847;
+            letter-spacing: 0.4px;
+            padding-left: 20px;
+        }
+        
         #chart {
             margin: 0 5px;
             width: 100%;
             height: 100%;
         }
-
+        
         #chart,
         .chart-box {
             padding: 10px;
@@ -81,7 +94,7 @@
             border: 1px solid #ddd;
             box-shadow: 0 22px 35px -16px rgba(0, 0, 0, 0.1);
         }
-
+        
         select.flat-select {
             -moz-appearance: none;
             -webkit-appearance: none;
@@ -108,33 +121,34 @@
             -o-transition: 0.3s ease all;
             transition: 0.3s ease all;
         }
-
+        
         select.flat-select:focus,
         select.flat-select:hover {
             border: 0;
             outline: 0;
         }
-
+        
         .apexcharts-canvas {
             margin: 0 auto;
         }
-
+        
         #html {
             display: none;
         }
-
+        
         .tweet-stats {
             justify-content: center;
+            margin: 2em auto;
         }
-
+        
         .tweet-stats>div:first-child {
             flex: 1 1 0;
         }
-
+        
         .tweet-stats>div:last-child {
             flex: 2 1 0;
         }
-
+        
         #upcoming_events .flex-box {
             flex-wrap: nowrap;
             justify-content: center;
@@ -151,8 +165,7 @@
                 <div class="main-nav-inner">
                     <div class="title-nav-left">
                         <i class="fa fa-language flan" id="i_983a_0"></i><a class="notranslate" id="translate">हिंदी</a>
-                        <i class="fa fa-envelope-open-o fenv" id="i_983a_1"></i><a class="notranslate"
-                            href="mailto:registrar@nitk.ac.in">registrar@nitk.ac.in</a>
+                        <i class="fa fa-envelope-open-o fenv" id="i_983a_1"></i><a class="notranslate" href="mailto:registrar@nitk.ac.in">registrar@nitk.ac.in</a>
                         <i class="fa fa-phone fpho" id="i_983a_1"></i> 0824 247 4000
                     </div>
                     <div class="title-nav-right">
@@ -162,40 +175,35 @@
                                     Webmail
                                 </a>
                                 <ul class="sub-menu tail-head">
-                                    <li class="title-nav-item nav-arow li-style only-this-li link-over-main"
-                                        style="background: #EEEEEE !important">
+                                    <li class="title-nav-item nav-arow li-style only-this-li link-over-main" style="background: #EEEEEE !important">
                                         <a class="title-a" href="#">@nitk.ac.in</a>
                                         <ul class="sub-menu link-over">
-                                            <li class="title-nav-item li-style-2 only-this-li"
-                                                style="background: #dedede !important">
+                                            <li class="title-nav-item li-style-2 only-this-li" style="background: #dedede !important">
                                                 <a href="http://staffmail.nitk.ac.in/" target="_blank">Staff Mail</a>
                                             </li>
-                                            <li class="title-nav-item li-style-2"
-                                                style="background: #dedede !important">
+                                            <li class="title-nav-item li-style-2" style="background: #dedede !important">
                                                 <a href="https://www.mail.nitk.ac.in/" target="_blank">IRIS Mailer</a>
                                             </li>
                                         </ul>
                                     </li>
                                     <li class="title-nav-item li-style" style="background: #EEEEEE !important">
-                                        <a class="title-a-edu"
-                                            href="https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&amp;ltmpl=default&amp;hd=nitk.edu.in&amp;service=mail&amp;sacu=1&amp;rip=1&amp;flowName=GlifWebSignIn&amp;flowEntry=ServiceLogin"
+                                        <a class="title-a-edu" href="https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&amp;ltmpl=default&amp;hd=nitk.edu.in&amp;service=mail&amp;sacu=1&amp;rip=1&amp;flowName=GlifWebSignIn&amp;flowEntry=ServiceLogin"
                                             target="_blank">@nitk.edu.in</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="title-nav-item">
-                                <a class="title-a " href="https://www.nitk.ac.in/ariia" target="_blank" style="">
+                                <a class="title-a" href="https://www.nitk.ac.in/ariia" target="_blank">
                                     ARIIA
                                 </a>
                             </li>
                             <li class="title-nav-item">
-                                <a class="title-a" href="https://www.nitk.ac.in/nirf" target="_blank" style="">
+                                <a class="title-a" href="https://www.nitk.ac.in/nirf" target="_blank">
                                     NIRF
                                 </a>
                             </li>
                             <li class="title-nav-item btn-donate-sup">
-                                <a class="title-a support-link" href="https://iris.nitk.ac.in/donate" target="_blank"
-                                    style="position: initial !important; margin-left: 7px !important;">
+                                <a class="title-a support-link" href="https://iris.nitk.ac.in/donate" target="_blank" style="position: initial !important; margin-left: 7px !important;">
                                     Support NITK
                                 </a>
                             </li>
@@ -403,10 +411,10 @@
             <img class="sli-img" src="https://www.nitk.ac.in/images/b2.jpg">
             <img class="sli-img" src="https://www.nitk.ac.in/images/b4.jpg">
             <img class="sli-img" src="https://www.nitk.ac.in/images/b5.jpg">
+            <a class="prevbtn" onclick="plusSlides(-1)"><span class="pspan"></span></a>
+            <a class="nextbtn" onclick="plusSlides(1)"><span class="nspan"></span></a>
         </div>
 
-        <a class="prevbtn" onclick="plusSlides(-1)"><span class="pspan"></span></a>
-        <a class="nextbtn" onclick="plusSlides(1)"><span class="nspan"></span></a>
 
         <nav class="slider-nav flex-box max-width-boxes">
             <ul>
@@ -414,9 +422,7 @@
                     <div class="main-slide-sec">
                         <div class="inner-slide-div">
                             <div class="i-slide-main" id="div_1dd7_5">
-                                <div class="side-i-img"><img
-                                        src="https://www.nitk.ac.in/design-system/upload/icon-2.png" alt="" width="44"
-                                        height="40" title="icon-2"></div>
+                                <div class="side-i-img"><img src="https://www.nitk.ac.in/design-system/upload/icon-2.png" alt="" width="44" height="40" title="icon-2"></div>
                                 <div class="slide-i-main">
                                     <div class="slide-i-div">
                                         <h3 class="slide-h3">Academics</h3>
@@ -433,9 +439,7 @@
                     <div class="main-slide-sec">
                         <div class="inner-slide-div">
                             <div class="i-slide-main" id="div_1dd7_5">
-                                <div class="side-i-img"><img
-                                        src="https://www.nitk.ac.in/design-system/upload/icon-4.png" alt="" width="44"
-                                        height="40" title="icon-4"></div>
+                                <div class="side-i-img"><img src="https://www.nitk.ac.in/design-system/upload/icon-4.png" alt="" width="44" height="40" title="icon-4"></div>
                                 <div class="slide-i-main">
                                     <div class="slide-i-div">
                                         <h3 class="slide-h3">Research</h3>
@@ -453,9 +457,7 @@
                     <div class="main-slide-sec">
                         <div class="inner-slide-div">
                             <div class="i-slide-main" id="div_1dd7_5">
-                                <div class="side-i-img"><img
-                                        src="https://www.nitk.ac.in/design-system/upload/icon-1.png" alt="" width="44"
-                                        height="40" title="icon-"></div>
+                                <div class="side-i-img"><img src="https://www.nitk.ac.in/design-system/upload/icon-1.png" alt="" width="44" height="40" title="icon-"></div>
                                 <div class="slide-i-main">
                                     <div class="slide-i-div">
                                         <h3 class=" slide-h3">Campus</h3>
@@ -473,9 +475,7 @@
                     <div class="main-slide-sec">
                         <div class="inner-slide-div">
                             <div class="i-slide-main" id="div_1dd7_5">
-                                <div class="side-i-img"><img
-                                        src="https://www.nitk.ac.in/design-system/upload/icon-3.png" alt="" width="44"
-                                        height="40" title="icon-3"></div>
+                                <div class="side-i-img"><img src="https://www.nitk.ac.in/design-system/upload/icon-3.png" alt="" width="44" height="40" title="icon-3"></div>
                                 <div class="slide-i-main">
                                     <div class="slide-i-div">
                                         <h3 class=" slide-h3">Culture</h3>
@@ -496,22 +496,20 @@
     <section>
 
         <div class="sec-of-ranks flex-box max-width-boxes">
-            <div class="max-width-boxes rank-main">
-                <div class="inner-main-rank flex-box">
+
+            <div class="rank-main">
+                <div class="inner-main-rank">
 
                     <div class="inner-rank-title">
-                        <div class="rank-title-sec-div">
-
-                            <h3 class="rank-h1">Rankings</h3>
-                            <div class="divider-line-sec"></div>
-
+                        <div class="rank-title-sec-div divider-line-sec">
+                            <h3 class="rank-h1 divider-style">Rankings</h3>
                         </div>
                         <div class="title-sec-content">
                             <div class="title-content-div">
                                 <div class="one-rank-main">
                                     <span class="gdlr-core-event-item-info gdlr-core-type-start-date-month">
                                         <span class="gdlr-core-date">10</span>
-                                        <span class="gdlr-core-month">Rank</span>
+                                    <span class="gdlr-core-month">Rank</span>
                                     </span>
                                     <div class="gdlr-core-event-item-content-wrap">
                                         <h3 class="gdlr-core-event-item-title">
@@ -529,7 +527,7 @@
 
                                     <span class="gdlr-core-event-item-info gdlr-core-type-start-date-month">
                                         <span class="gdlr-core-date">32</span>
-                                        <span class="gdlr-core-month">Rank</span>
+                                    <span class="gdlr-core-month">Rank</span>
                                     </span>
                                     <div class="gdlr-core-event-item-content-wrap">
                                         <h3 class="gdlr-core-event-item-title">
@@ -545,7 +543,7 @@
                                 <div class="three-rank-main">
                                     <span class="gdlr-core-event-item-info gdlr-core-type-start-date-month">
                                         <span class="gdlr-core-date">63</span>
-                                        <span class="gdlr-core-month">Rank</span>
+                                    <span class="gdlr-core-month">Rank</span>
                                     </span>
                                     <div class="gdlr-core-event-item-content-wrap">
                                         <h3 class="gdlr-core-event-item-title">
@@ -566,22 +564,18 @@
                 </div>
             </div>
             <!-- ---------- -->
-            <div class="max-width-boxes news-main">
-                <div class="inner-main-news flex-box">
+            <div class="news-main">
+                <div class="inner-main-news">
 
                     <div class="inner-rank-title">
-                        <div class="rank-title-sec-div">
-                            <div class="title-sec-inner">
-                                <h3 class="rank-h1">News and Updates</h3>
-                                <div class="divider-line-sec news-divider"></div>
-                            </div>
+                        <div class="rank-title-sec-div divider-line-sec">
+                            <h3 class="rank-h1 divider-style">News and Updates</h3>
                         </div>
                         <div class="title-sec-content">
                             <div class="title-content-div">
                                 <div class="gdlr-core-blog-widget-content">
                                     <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                        <span
-                                            class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                        <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                             <a href="https://www.nitk.ac.in/nitk-faculty-researchers-in-stanford-university-list-of-top-2-scientist"
                                                 target="_self"> Nov 12, 2021
                                             </a>
@@ -589,8 +583,7 @@
                                     </div>
                                     <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
                                         <i class="fa fa-thumb-tack" style="color:#50bd77"></i>
-                                        <a href="https://www.nitk.ac.in/nitk-faculty-researchers-in-stanford-university-list-of-top-2-scientist"
-                                            target="_self">
+                                        <a href="https://www.nitk.ac.in/nitk-faculty-researchers-in-stanford-university-list-of-top-2-scientist" target="_self">
                                             NITK Faculty Researchers in Stanford University List of Top 2%
                                             Scientist
                                         </a>
@@ -599,8 +592,7 @@
 
                                 <div class="gdlr-core-blog-widget-content">
                                     <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                        <span
-                                            class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                        <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                             <a href="https://www.nitk.ac.in/doctor-of-science-for-sri-suhas-yathiraj--an-interview-with-hi"
                                                 target="_self"> Nov 03, 2021
                                             </a>
@@ -608,35 +600,29 @@
                                     </div>
                                     <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
                                         <i class="fa fa-thumb-tack" style="color:#50bd77"></i>
-                                        <a href="https://www.nitk.ac.in/doctor-of-science-for-sri-suhas-yathiraj--an-interview-with-hi"
-                                            target="_self">
+                                        <a href="https://www.nitk.ac.in/doctor-of-science-for-sri-suhas-yathiraj--an-interview-with-hi" target="_self">
                                             Doctor of Science for Sri Suhas Yathiraj &amp; an interview with him
                                         </a>
                                     </h3>
                                 </div>
                                 <!-- do not touch or expand this start here -->
-                                <div class="donottouch">
-                                    <div class="slider-track"
-                                        style="opacity: 1; width: 33020px;  transform: translate3d(-9652px, 0px, 0px);">
+                                <div class="donottouch" style="display: none; background-color:#50bd77">
+                                    <div class="slider-track" style="opacity: 1; width: 33020px;  transform: translate3d(-9652px, 0px, 0px);">
                                         <div class="gdlr-core-item-list-wrap news-slider" style="display: none;     position: relative;
                                         /* display: block;*/">
                                             <div class="slick-list" style="    position: relative; display: block; overflow: hidden;">
-                                                <div
-                                                    class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
+                                                <div class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/serb-srg-grant-is-sanctioned-to-dr-lakshmi-vellanki-chemistry-dept"
                                                                     target="_self">
                                                                     Dec 15, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/serb-srg-grant-is-sanctioned-to-dr-lakshmi-vellanki-chemistry-dept"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/serb-srg-grant-is-sanctioned-to-dr-lakshmi-vellanki-chemistry-dept" target="_self">
                                                                 SERB-SRG grant is sanctioned to Dr. Lakshmi Vellanki,
                                                                 Chemistry
                                                                 dept.
@@ -645,18 +631,15 @@
                                                     </div>
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/dr-palanisamy-t-authored-a-book-sustainable-practices-and-innovation"
                                                                     target="_self">
                                                                     Dec 11, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/dr-palanisamy-t-authored-a-book-sustainable-practices-and-innovation"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/dr-palanisamy-t-authored-a-book-sustainable-practices-and-innovation" target="_self">
                                                                 Dr PALANISAMY T authored a book "Sustainable Practices
                                                                 and
                                                                 Innovation.."
@@ -664,22 +647,18 @@
                                                         </h3>
                                                     </div>
                                                 </div>
-                                                <div
-                                                    class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
+                                                <div class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/central-research-facility-website-was-inaugurated-by-the-director-nitk"
                                                                     target="_self">
                                                                     Dec 11, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/central-research-facility-website-was-inaugurated-by-the-director-nitk"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/central-research-facility-website-was-inaugurated-by-the-director-nitk" target="_self">
                                                                 Central Research Facility website inaugurated by the
                                                                 Director,
                                                                 NITK
@@ -688,40 +667,33 @@
                                                     </div>
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/sad-demise-of-chief-defence-staff-cds-general-bipin-rawat"
                                                                     target="_self">
                                                                     Dec 09, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/sad-demise-of-chief-defence-staff-cds-general-bipin-rawat"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/sad-demise-of-chief-defence-staff-cds-general-bipin-rawat" target="_self">
                                                                 Sad demise of Chief Defence Staff (CDS) General Bipin
                                                                 Rawat
                                                             </a>
                                                         </h3>
                                                     </div>
                                                 </div>
-                                                <div
-                                                    class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
+                                                <div class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/-kumaran-v-sajid-k-subba-rao-manu-havegot-best-paper-award"
                                                                     target="_self">
                                                                     Dec 09, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/-kumaran-v-sajid-k-subba-rao-manu-havegot-best-paper-award"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/-kumaran-v-sajid-k-subba-rao-manu-havegot-best-paper-award" target="_self">
                                                                 Kumaran V, Sajid K, Subba Rao, Manu have got Best paper
                                                                 award
                                                             </a>
@@ -729,18 +701,15 @@
                                                     </div>
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/-sreelakshmy-madhusoodhanan-and-subba-rao-have--best-paper-award"
                                                                     target="_self">
                                                                     Dec 09, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/-sreelakshmy-madhusoodhanan-and-subba-rao-have--best-paper-award"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/-sreelakshmy-madhusoodhanan-and-subba-rao-have--best-paper-award" target="_self">
                                                                 Sreelakshmy Madhusoodhanan and Subba Rao have got Best
                                                                 paper
                                                                 award
@@ -748,101 +717,83 @@
                                                         </h3>
                                                     </div>
                                                 </div>
-                                                <div
-                                                    class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
+                                                <div class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/core-research-grant-award-ed-to-dr-beneesh--p-b"
                                                                     target="_self">
                                                                     Dec 08, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/core-research-grant-award-ed-to-dr-beneesh--p-b"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/core-research-grant-award-ed-to-dr-beneesh--p-b" target="_self">
                                                                 Core Research grant award ed to Dr. Beneesh P B
                                                             </a>
                                                         </h3>
                                                     </div>
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/dr-sreevalsa-kolathayar-authored-a-book-disaster-risk-reduction"
                                                                     target="_self">
                                                                     Dec 08, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/dr-sreevalsa-kolathayar-authored-a-book-disaster-risk-reduction"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/dr-sreevalsa-kolathayar-authored-a-book-disaster-risk-reduction" target="_self">
                                                                 Dr. Sreevalsa Kolathayar authored a book 'Disaster Risk
                                                                 Reduction'
                                                             </a>
                                                         </h3>
                                                     </div>
                                                 </div>
-                                                <div
-                                                    class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
+                                                <div class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/Dr Sreevalsa Kolathayar contributed two chapters"
                                                                     target="_self">
                                                                     Dec 08, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/Dr Sreevalsa Kolathayar contributed two chapters"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/Dr Sreevalsa Kolathayar contributed two chapters" target="_self">
                                                                 Dr. Sreevalsa Kolathayar contributed two chapters
                                                             </a>
                                                         </h3>
                                                     </div>
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/core-esearch-grant-award-ed-to-dr-vijayendra-s-shetti"
                                                                     target="_self">
                                                                     Dec 08, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/core-esearch-grant-award-ed-to-dr-vijayendra-s-shetti"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/core-esearch-grant-award-ed-to-dr-vijayendra-s-shetti" target="_self">
                                                                 Core Research grant award ed to Dr. Vijayendra S. Shetti
                                                             </a>
                                                         </h3>
                                                     </div>
                                                 </div>
-                                                <div
-                                                    class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
+                                                <div class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/best-paper-award-to-vaishnavi-surve-pradeep-gorre-dr-sandeep-kuma"
                                                                     target="_self">
                                                                     Dec 06, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/best-paper-award-to-vaishnavi-surve-pradeep-gorre-dr-sandeep-kuma"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/best-paper-award-to-vaishnavi-surve-pradeep-gorre-dr-sandeep-kuma" target="_self">
                                                                 Best Paper Award to Vaishnavi Surve, Pradeep Gorre, Dr
                                                                 Sandeep
                                                                 Kumar
@@ -851,18 +802,15 @@
                                                     </div>
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/congratulations-to-dr-kalpana-r-dept-of-eee-for-the-indian-patent"
                                                                     target="_self">
                                                                     Dec 04, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/congratulations-to-dr-kalpana-r-dept-of-eee-for-the-indian-patent"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/congratulations-to-dr-kalpana-r-dept-of-eee-for-the-indian-patent" target="_self">
                                                                 Congratulations to Dr. Kalpana R, Dept. of EEE, for the
                                                                 Indian
                                                                 Patent
@@ -870,22 +818,18 @@
                                                         </h3>
                                                     </div>
                                                 </div>
-                                                <div
-                                                    class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
+                                                <div class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/dr-ranjeet-kumar-sahusbook-published-in-crc-press-taylor-and-francis"
                                                                     target="_self">
                                                                     Dec 03, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/dr-ranjeet-kumar-sahusbook-published-in-crc-press-taylor-and-francis"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/dr-ranjeet-kumar-sahusbook-published-in-crc-press-taylor-and-francis" target="_self">
                                                                 Dr. Ranjeet Kumar Sahu's Book Published in CRC Press,
                                                                 Taylor
                                                                 and
@@ -895,79 +839,65 @@
                                                     </div>
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/nitk-racing-won-the-1-and-2-prize-in-national-level--fsev-challenge"
                                                                     target="_self">
                                                                     Nov 08, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/nitk-racing-won-the-1-and-2-prize-in-national-level--fsev-challenge"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/nitk-racing-won-the-1-and-2-prize-in-national-level--fsev-challenge" target="_self">
                                                                 NITK Racing won the 1 and 2 prize in national level FSEV
                                                                 Challenge
                                                             </a>
                                                         </h3>
                                                     </div>
                                                 </div>
-                                                <div
-                                                    class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
+                                                <div class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/faculty-11-and-research-scholar-cricket-match"
                                                                     target="_self">
                                                                     Nov 08, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/faculty-11-and-research-scholar-cricket-match"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/faculty-11-and-research-scholar-cricket-match" target="_self">
                                                                 Faculty 11 and Research Scholar cricket match
                                                             </a>
                                                         </h3>
                                                     </div>
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/kannada-rajyotsava-event-2021-photos"
                                                                     target="_self">
                                                                     Nov 02, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/kannada-rajyotsava-event-2021-photos"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/kannada-rajyotsava-event-2021-photos" target="_self">
                                                                 Kannada Rajyotsava event 2021 photos
                                                             </a>
                                                         </h3>
                                                     </div>
                                                 </div>
-                                                <div
-                                                    class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
+                                                <div class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/ms-swathilaxmi-receives-iim-students-prize-for-securing-highest-marks-i"
                                                                     target="_self">
                                                                     Oct 29, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/ms-swathilaxmi-receives-iim-students-prize-for-securing-highest-marks-i"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/ms-swathilaxmi-receives-iim-students-prize-for-securing-highest-marks-i" target="_self">
                                                                 Ms. Swathilaxmi receives IIM Students Prize for securing
                                                                 highest
                                                                 marks
@@ -976,18 +906,15 @@
                                                     </div>
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/msarchita-s-receives-iim-students-prize-for-securing-3rd-highest-marks-"
                                                                     target="_self">
                                                                     Oct 29, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/msarchita-s-receives-iim-students-prize-for-securing-3rd-highest-marks-"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/msarchita-s-receives-iim-students-prize-for-securing-3rd-highest-marks-" target="_self">
                                                                 Ms.Archita S receives IIM Students Prize for securing
                                                                 3rd
                                                                 highest marks
@@ -995,62 +922,51 @@
                                                         </h3>
                                                     </div>
                                                 </div>
-                                                <div
-                                                    class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
+                                                <div class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/prof-d-krishna-bhat-is-awarded-as-highly-cited-author-"
                                                                     target="_self">
                                                                     Oct 28, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/prof-d-krishna-bhat-is-awarded-as-highly-cited-author-"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/prof-d-krishna-bhat-is-awarded-as-highly-cited-author-" target="_self">
                                                                 Prof. D. Krishna Bhat is awarded as highly cited author
                                                             </a>
                                                         </h3>
                                                     </div>
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/bio-concrete-lab-setup-under-the-supervision-of-dr-palanisamy-t"
                                                                     target="_self">
                                                                     Oct 27, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/bio-concrete-lab-setup-under-the-supervision-of-dr-palanisamy-t"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/bio-concrete-lab-setup-under-the-supervision-of-dr-palanisamy-t" target="_self">
                                                                 Bio-Concrete Lab setup under the supervision of Dr.
                                                                 Palanisamy T
                                                             </a>
                                                         </h3>
                                                     </div>
                                                 </div>
-                                                <div
-                                                    class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
+                                                <div class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/19th-annual-convocation-of-nitk-surathkal---november-6-2021-live"
                                                                     target="_self">
                                                                     Oct 25, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/19th-annual-convocation-of-nitk-surathkal---november-6-2021-live"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/19th-annual-convocation-of-nitk-surathkal---november-6-2021-live" target="_self">
                                                                 19th Annual Convocation of NITK Surathkal - November 6,
                                                                 2021-LIVE
                                                             </a>
@@ -1058,18 +974,15 @@
                                                     </div>
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/dr-karra-ram-chandar-co-opted-to-the-national-council-of-meai"
                                                                     target="_self">
                                                                     Oct 22, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/dr-karra-ram-chandar-co-opted-to-the-national-council-of-meai"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/dr-karra-ram-chandar-co-opted-to-the-national-council-of-meai" target="_self">
                                                                 Dr. Karra Ram Chandar co-opted to the National Council
                                                                 of
                                                                 MEAI
@@ -1077,22 +990,18 @@
                                                         </h3>
                                                     </div>
                                                 </div>
-                                                <div
-                                                    class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
+                                                <div class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/indian-patent-has-been-granted-to-dr-hari-prasad-dasari-and-his-team"
                                                                     target="_self">
                                                                     Oct 04, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/indian-patent-has-been-granted-to-dr-hari-prasad-dasari-and-his-team"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/indian-patent-has-been-granted-to-dr-hari-prasad-dasari-and-his-team" target="_self">
                                                                 Indian Patent has been granted to Dr. Hari Prasad Dasari
                                                                 and
                                                                 his
@@ -1102,18 +1011,15 @@
                                                     </div>
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/he-best-paper-being-awarded-to-dr-hari-prasad-dasari-and-his-students"
                                                                     target="_self">
                                                                     Oct 04, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/he-best-paper-being-awarded-to-dr-hari-prasad-dasari-and-his-students"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/he-best-paper-being-awarded-to-dr-hari-prasad-dasari-and-his-students" target="_self">
                                                                 The best paper being awarded to Dr. Hari Prasad Dasari
                                                                 and
                                                                 his
@@ -1122,22 +1028,18 @@
                                                         </h3>
                                                     </div>
                                                 </div>
-                                                <div
-                                                    class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
+                                                <div class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/dr-l-m-padhya-best-university-library-award-to-the-central-library-nitk"
                                                                     target="_self">
                                                                     Oct 04, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/dr-l-m-padhya-best-university-library-award-to-the-central-library-nitk"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/dr-l-m-padhya-best-university-library-award-to-the-central-library-nitk" target="_self">
                                                                 Dr L M Padhya Best University Library award to the
                                                                 Central
                                                                 Library, NITK
@@ -1146,18 +1048,15 @@
                                                     </div>
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/drk-ram-chandar-nominated-to-editorial-board-mining-engineers-journal"
                                                                     target="_self">
                                                                     Sep 23, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/drk-ram-chandar-nominated-to-editorial-board-mining-engineers-journal"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/drk-ram-chandar-nominated-to-editorial-board-mining-engineers-journal" target="_self">
                                                                 Dr.K Ram Chandar nominated to Editorial Board, Mining
                                                                 Engineers'
                                                                 Journal
@@ -1165,40 +1064,33 @@
                                                         </h3>
                                                     </div>
                                                 </div>
-                                                <div
-                                                    class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
+                                                <div class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/best-oral-presentation-award-for-dr-hari-mahalingam"
                                                                     target="_self">
                                                                     Sep 13, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/best-oral-presentation-award-for-dr-hari-mahalingam"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/best-oral-presentation-award-for-dr-hari-mahalingam" target="_self">
                                                                 Best Oral Presentation Award for Dr. Hari Mahalingam
                                                             </a>
                                                         </h3>
                                                     </div>
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/miss-poonam-sahoo-has-won-the-“bronze-award”-for-the-research-paper"
                                                                     target="_self">
                                                                     Sep 12, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/miss-poonam-sahoo-has-won-the-“bronze-award”-for-the-research-paper"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/miss-poonam-sahoo-has-won-the-“bronze-award”-for-the-research-paper" target="_self">
                                                                 Miss Poonam Sahoo has won the “Bronze Award” for the
                                                                 research
                                                                 paper
@@ -1206,22 +1098,18 @@
                                                         </h3>
                                                     </div>
                                                 </div>
-                                                <div
-                                                    class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
+                                                <div class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/best-paper-award-for-sarin-raju-research-schola-and-dr-pavan-kumar---"
                                                                     target="_self">
                                                                     Sep 08, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/best-paper-award-for-sarin-raju-research-schola-and-dr-pavan-kumar---"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/best-paper-award-for-sarin-raju-research-schola-and-dr-pavan-kumar---" target="_self">
                                                                 Best paper award for Sarin Raju Research Scholar and Dr.
                                                                 Pavan
                                                                 Kumar
@@ -1230,40 +1118,33 @@
                                                     </div>
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/mrsuhas--yathiraj-alumni-of-nitk-bags-silver-medal-at-paralympics-2021"
                                                                     target="_self">
                                                                     Sep 05, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/mrsuhas--yathiraj-alumni-of-nitk-bags-silver-medal-at-paralympics-2021"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/mrsuhas--yathiraj-alumni-of-nitk-bags-silver-medal-at-paralympics-2021" target="_self">
                                                                 Mr.Suhas Yathiraj, Alumni of NITK bags Silver Medal at
                                                                 Paralympics-2021
                                                             </a>
                                                         </h3>
                                                     </div>
                                                 </div>
-                                                <div
-                                                    class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
+                                                <div class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/dr-harsha-vardhan-nominated-as-a-member-for-school-of-mining-ballari"
                                                                     target="_self">
                                                                     Sep 02, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/dr-harsha-vardhan-nominated-as-a-member-for-school-of-mining-ballari"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/dr-harsha-vardhan-nominated-as-a-member-for-school-of-mining-ballari" target="_self">
                                                                 Dr. Harsha Vardhan nominated as a member for School of
                                                                 Mining,
                                                                 Ballari
@@ -1272,18 +1153,15 @@
                                                     </div>
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/dr-varghese-george-received-the-best-reviewer-certification-award"
                                                                     target="_self">
                                                                     Aug 16, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/dr-varghese-george-received-the-best-reviewer-certification-award"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/dr-varghese-george-received-the-best-reviewer-certification-award" target="_self">
                                                                 Dr. Varghese George received the "Best Reviewer
                                                                 Certification"
                                                                 Award
@@ -1291,22 +1169,18 @@
                                                         </h3>
                                                     </div>
                                                 </div>
-                                                <div
-                                                    class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
+                                                <div class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/dr-varghese-george-received-the-igbc-accredited-faculty-award"
                                                                     target="_self">
                                                                     Aug 16, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/dr-varghese-george-received-the-igbc-accredited-faculty-award"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/dr-varghese-george-received-the-igbc-accredited-faculty-award" target="_self">
                                                                 Dr. Varghese George received the "IGBC Accredited
                                                                 Faculty"
                                                                 Award
@@ -1315,39 +1189,32 @@
                                                     </div>
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/technology-transfer-from-nitk-to-ngv-naturals"
                                                                     target="_self">
                                                                     Aug 06, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/technology-transfer-from-nitk-to-ngv-naturals"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/technology-transfer-from-nitk-to-ngv-naturals" target="_self">
                                                                 Technology transfer from NITK to nGV Naturals
                                                             </a>
                                                         </h3>
                                                     </div>
                                                 </div>
-                                                <div
-                                                    class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
+                                                <div class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/bureau-of-indian-standards-nominates-dr-sreevalsa-k-as-an-expert-membe"
                                                                     target="_self">
                                                                     Aug 06, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/bureau-of-indian-standards-nominates-dr-sreevalsa-k-as-an-expert-membe"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/bureau-of-indian-standards-nominates-dr-sreevalsa-k-as-an-expert-membe" target="_self">
                                                                 Bureau of Indian Standards nominates Dr. Sreevalsa K as
                                                                 an
                                                                 Expert member
@@ -1356,40 +1223,33 @@
                                                     </div>
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/springer-book-published-by-profmuralidhar-kulkarni-and-others"
                                                                     target="_self">
                                                                     Aug 05, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/springer-book-published-by-profmuralidhar-kulkarni-and-others"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/springer-book-published-by-profmuralidhar-kulkarni-and-others" target="_self">
                                                                 SPRINGER Book published by Prof. Muralidhar Kulkarni and
                                                                 others
                                                             </a>
                                                         </h3>
                                                     </div>
                                                 </div>
-                                                <div
-                                                    class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
+                                                <div class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/over-all-best-paper-award-to-drpathipati-srihari-and-othersstudents"
                                                                     target="_self">
                                                                     Aug 03, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/over-all-best-paper-award-to-drpathipati-srihari-and-othersstudents"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/over-all-best-paper-award-to-drpathipati-srihari-and-othersstudents" target="_self">
                                                                 Over all Best Paper Award to Dr.PATHIPATI SRIHARI and
                                                                 OTHERS(students)
                                                             </a>
@@ -1397,18 +1257,15 @@
                                                     </div>
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/best-paper-award-to-purushottama--pardhasaradhi--srinathdr-p-srihar"
                                                                     target="_self">
                                                                     Aug 03, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/best-paper-award-to-purushottama--pardhasaradhi--srinathdr-p-srihar"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/best-paper-award-to-purushottama--pardhasaradhi--srinathdr-p-srihar" target="_self">
                                                                 Best Paper Award to PURUSHOTTAMA, PARDHASARADHI,
                                                                 SRINATH&Dr.
                                                                 P
@@ -1417,22 +1274,18 @@
                                                         </h3>
                                                     </div>
                                                 </div>
-                                                <div
-                                                    class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
+                                                <div class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/best-paper-award-to-dr-u-s-acharya-drp-srihari-and-othersstudents"
                                                                     target="_self">
                                                                     Aug 03, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/best-paper-award-to-dr-u-s-acharya-drp-srihari-and-othersstudents"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/best-paper-award-to-dr-u-s-acharya-drp-srihari-and-othersstudents" target="_self">
                                                                 Best Paper Award to Dr. S.U Acharya, Dr.P Srihari and
                                                                 Others(Students)
                                                             </a>
@@ -1440,40 +1293,33 @@
                                                     </div>
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/drgeetha-v-has-done-translation-of-nptel-course-in-kannada"
                                                                     target="_self">
                                                                     Jul 30, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/drgeetha-v-has-done-translation-of-nptel-course-in-kannada"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/drgeetha-v-has-done-translation-of-nptel-course-in-kannada" target="_self">
                                                                 Dr. Geetha V has done translation of NPTEL course in
                                                                 Kannada
                                                             </a>
                                                         </h3>
                                                     </div>
                                                 </div>
-                                                <div
-                                                    class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
+                                                <div class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/best-phd-thesis-award--for-vasudeva-under-the-guidance-of-dr-sm-hegd"
                                                                     target="_self">
                                                                     Jul 28, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/best-phd-thesis-award--for-vasudeva-under-the-guidance-of-dr-sm-hegd"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/best-phd-thesis-award--for-vasudeva-under-the-guidance-of-dr-sm-hegd" target="_self">
                                                                 Best PhD Thesis Award for Vasudeva under the guidance of
                                                                 Dr.
                                                                 S.M. Hegde
@@ -1482,18 +1328,15 @@
                                                     </div>
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/best--paper-award-to-tanmai-h-mukesh-b-r-veena-m---dr--sowmya-kamath"
                                                                     target="_self">
                                                                     Jul 22, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/best--paper-award-to-tanmai-h-mukesh-b-r-veena-m---dr--sowmya-kamath"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/best--paper-award-to-tanmai-h-mukesh-b-r-veena-m---dr--sowmya-kamath" target="_self">
                                                                 Best Paper Award to Tanmai H, Mukesh B R, Veena M & Dr.
                                                                 Sowmya
                                                                 Kamath
@@ -1501,59 +1344,49 @@
                                                         </h3>
                                                     </div>
                                                 </div>
-                                                <div
-                                                    class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
+                                                <div class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/new-four-year-btech-course-in-artificial-intelligence-"
                                                                     target="_self">
                                                                     Jul 05, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/new-four-year-btech-course-in-artificial-intelligence-"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/new-four-year-btech-course-in-artificial-intelligence-" target="_self">
                                                                 New four-year B.Tech course in Artificial Intelligence
                                                             </a>
                                                         </h3>
                                                     </div>
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/international-yoga-day-2021" target="_self">
                                                                     Jun 22, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
                                                             <a href="/international-yoga-day-2021" target="_self">
                                                                 International Yoga Day 2021
                                                             </a>
                                                         </h3>
                                                     </div>
                                                 </div>
-                                                <div
-                                                    class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
+                                                <div class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/drritanjali-majhi-is-nominated-as-a-member-of-the-board-of-studies-"
                                                                     target="_self">
                                                                     Jun 04, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/drritanjali-majhi-is-nominated-as-a-member-of-the-board-of-studies-"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/drritanjali-majhi-is-nominated-as-a-member-of-the-board-of-studies-" target="_self">
                                                                 Dr.Ritanjali Majhi is nominated as a member of the Board
                                                                 of
                                                                 Studies
@@ -1562,18 +1395,15 @@
                                                     </div>
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/dr-pradyot-ranjan-jena-has-received-an-international-research-project-"
                                                                     target="_self">
                                                                     Jun 02, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/dr-pradyot-ranjan-jena-has-received-an-international-research-project-"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/dr-pradyot-ranjan-jena-has-received-an-international-research-project-" target="_self">
                                                                 Dr.Pradyot R Jena receives International Research
                                                                 Project
                                                                 funded
@@ -1582,101 +1412,83 @@
                                                         </h3>
                                                     </div>
                                                 </div>
-                                                <div
-                                                    class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
+                                                <div class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/INSA Visiting Scientist award to Dr. Mandeep Singh"
                                                                     target="_self">
                                                                     Jun 02, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/INSA Visiting Scientist award to Dr. Mandeep Singh"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/INSA Visiting Scientist award to Dr. Mandeep Singh" target="_self">
                                                                 INSA Visiting Scientist award to Dr. Mandeep Singh
                                                             </a>
                                                         </h3>
                                                     </div>
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/best-paper-award-to-ms-anupama-182en008-and-dr-s-shrihar"
                                                                     target="_self">
                                                                     May 05, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/best-paper-award-to-ms-anupama-182en008-and-dr-s-shrihar"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/best-paper-award-to-ms-anupama-182en008-and-dr-s-shrihar" target="_self">
                                                                 Best Paper Award to Ms. Anupama (182EN008) and Dr. S.
                                                                 Shrihari
                                                             </a>
                                                         </h3>
                                                     </div>
                                                 </div>
-                                                <div
-                                                    class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
+                                                <div class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/best-presentation-award-to-rony-js-in-icraft-2020"
                                                                     target="_self">
                                                                     Apr 07, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/best-presentation-award-to-rony-js-in-icraft-2020"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/best-presentation-award-to-rony-js-in-icraft-2020" target="_self">
                                                                 Best Presentation Award to Rony JS in iCRAFT-2020
                                                             </a>
                                                         </h3>
                                                     </div>
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/best-presentation-award-to-rony-js-in-hydro-2020"
                                                                     target="_self">
                                                                     Apr 07, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/best-presentation-award-to-rony-js-in-hydro-2020"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/best-presentation-award-to-rony-js-in-hydro-2020" target="_self">
                                                                 Best Presentation Award to Rony JS in HYDRO-2020
                                                             </a>
                                                         </h3>
                                                     </div>
                                                 </div>
-                                                <div
-                                                    class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
+                                                <div class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/best-paper-award-for-ms-ayilobeni-kikon--prof-paresh-chandra-deka-"
                                                                     target="_self">
                                                                     Apr 07, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/best-paper-award-for-ms-ayilobeni-kikon--prof-paresh-chandra-deka-"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/best-paper-award-for-ms-ayilobeni-kikon--prof-paresh-chandra-deka-" target="_self">
                                                                 Best Paper Award for Ms Ayilobeni Kikon & Prof. Paresh
                                                                 Chandra
                                                                 Deka
@@ -1685,40 +1497,33 @@
                                                     </div>
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/best-paper-award-for-dr-subrahmanya-kundapura-and-arya-sajeev"
                                                                     target="_self">
                                                                     Apr 06, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/best-paper-award-for-dr-subrahmanya-kundapura-and-arya-sajeev"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/best-paper-award-for-dr-subrahmanya-kundapura-and-arya-sajeev" target="_self">
                                                                 Best Paper Award for Dr Subrahmanya Kundapura and Arya
                                                                 Sajeev
                                                             </a>
                                                         </h3>
                                                     </div>
                                                 </div>
-                                                <div
-                                                    class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
+                                                <div class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/best-paper-award-for-alka-abraham--and-dr-subrahmanya-kundapura-"
                                                                     target="_self">
                                                                     Apr 06, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/best-paper-award-for-alka-abraham--and-dr-subrahmanya-kundapura-"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/best-paper-award-for-alka-abraham--and-dr-subrahmanya-kundapura-" target="_self">
                                                                 Best Paper Award for Alka Abraham and Dr. Subrahmanya
                                                                 Kundapura
                                                             </a>
@@ -1726,39 +1531,32 @@
                                                     </div>
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/dst joint  research-grant  to-prof-vidya-shetty-k-"
                                                                     target="_self">
                                                                     Apr 01, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/dst joint  research-grant  to-prof-vidya-shetty-k-"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/dst joint  research-grant  to-prof-vidya-shetty-k-" target="_self">
                                                                 DST Joint Research Grant to Prof. Vidya Shetty K
                                                             </a>
                                                         </h3>
                                                     </div>
                                                 </div>
-                                                <div
-                                                    class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
+                                                <div class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/sreevalsa-kolathayar-was-featured-in-the-recent-geostrata-magazine"
                                                                     target="_self">
                                                                     Apr 01, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/sreevalsa-kolathayar-was-featured-in-the-recent-geostrata-magazine"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/sreevalsa-kolathayar-was-featured-in-the-recent-geostrata-magazine" target="_self">
                                                                 Dr.Sreevalsa Kolathayar features in the recent GEOSTRATA
                                                                 Magazine
                                                             </a>
@@ -1766,18 +1564,15 @@
                                                     </div>
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/best-paper-award-to-ms-deeksha-mathew-mtech-student--drvidya-shetty-"
                                                                     target="_self">
                                                                     Mar 31, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/best-paper-award-to-ms-deeksha-mathew-mtech-student--drvidya-shetty-"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/best-paper-award-to-ms-deeksha-mathew-mtech-student--drvidya-shetty-" target="_self">
                                                                 Best Paper Award to Ms Deeksha Mathew, M.Tech student &
                                                                 Dr
                                                                 Vidya
@@ -1786,22 +1581,18 @@
                                                         </h3>
                                                     </div>
                                                 </div>
-                                                <div
-                                                    class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
+                                                <div class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/paper-by-drdkrishna-bhat-has-bee-selected--as-most-popular-article-"
                                                                     target="_self">
                                                                     Mar 26, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/paper-by-drdkrishna-bhat-has-bee-selected--as-most-popular-article-"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/paper-by-drdkrishna-bhat-has-bee-selected--as-most-popular-article-" target="_self">
                                                                 Paper by Dr.D.Krishna Bhat has been selected as most
                                                                 popular
                                                                 article
@@ -1810,18 +1601,15 @@
                                                     </div>
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/best-paper-award-to-sowmya-kamath-niteesh--rashad--venkatesh--veena-"
                                                                     target="_self">
                                                                     Mar 05, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/best-paper-award-to-sowmya-kamath-niteesh--rashad--venkatesh--veena-"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/best-paper-award-to-sowmya-kamath-niteesh--rashad--venkatesh--veena-" target="_self">
                                                                 Best Paper Award to Sowmya Kamath, Niteesh, Rashad,
                                                                 Venkatesh &
                                                                 Veena
@@ -1829,22 +1617,18 @@
                                                         </h3>
                                                     </div>
                                                 </div>
-                                                <div
-                                                    class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
+                                                <div class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/dr-anand-kumar-m-successfully-executed-the-international-project "
                                                                     target="_self">
                                                                     Feb 26, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/dr-anand-kumar-m-successfully-executed-the-international-project "
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/dr-anand-kumar-m-successfully-executed-the-international-project " target="_self">
                                                                 Dr Anand Kumar M successfully executed the International
                                                                 Project
                                                             </a>
@@ -1852,37 +1636,31 @@
                                                     </div>
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/nirf-2020-certificates" target="_self">
                                                                     Feb 24, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
                                                             <a href="/nirf-2020-certificates" target="_self">
                                                                 NIRF-2020 Certificates
                                                             </a>
                                                         </h3>
                                                     </div>
                                                 </div>
-                                                <div
-                                                    class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
+                                                <div class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/best-paper-title-in-the-international-conference-icoscm2021-dr-rofin-t-m"
                                                                     target="_self">
                                                                     Feb 10, 2021
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/best-paper-title-in-the-international-conference-icoscm2021-dr-rofin-t-m"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/best-paper-title-in-the-international-conference-icoscm2021-dr-rofin-t-m" target="_self">
                                                                 Best paper title in the international conference
                                                                 ICOSCM2021-Dr
                                                                 Rofin T M
@@ -1891,36 +1669,30 @@
                                                     </div>
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/New Library Website Launch by Director"
                                                                     target="_self">
                                                                     Aug 07, 2020
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/New Library Website Launch by Director"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/New Library Website Launch by Director" target="_self">
                                                                 New Library Website Launch by Director, NITK Surathkal
                                                             </a>
                                                         </h3>
                                                     </div>
                                                 </div>
-                                                <div
-                                                    class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
+                                                <div class="gdlr-core-item-list gdlr-core-blog-widget gdlr-core-item-mglr clearfix gdlr-core-style-small">
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/Alwyn-Pais-CSE" target="_self">
                                                                     Jun 29, 2020
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
                                                             <a href="/Alwyn-Pais-CSE" target="_self">
                                                                 Dr.Alwyn Roshan Pais has received a google Cloud Covid19
                                                                 Research grant
@@ -1929,18 +1701,15 @@
                                                     </div>
                                                     <div class="gdlr-core-blog-widget-content">
                                                         <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider">
-                                                            <span
-                                                                class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
+                                                            <span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date">
                                                                 <a href="/profraj-mohan-b--p-e-jagadeeshbabu-got-research-grant-of-rs-5576lac-"
                                                                     target="_self">
                                                                     Jun 04, 2020
                                                                 </a>
                                                             </span>
                                                         </div>
-                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title"
-                                                            style="font-weight: 600">
-                                                            <a href="/profraj-mohan-b--p-e-jagadeeshbabu-got-research-grant-of-rs-5576lac-"
-                                                                target="_self">
+                                                        <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-weight: 600">
+                                                            <a href="/profraj-mohan-b--p-e-jagadeeshbabu-got-research-grant-of-rs-5576lac-" target="_self">
                                                                 Prof.Raj Mohan B & P E JagadeeshBabu got research grant
                                                                 of
                                                                 Rs
@@ -1956,22 +1725,19 @@
 
                                 <!-- do not touch or expand this end here -->
                             </div>
-                           
+
                         </div>
                     </div>
 
                 </div>
             </div>
             <!-- --------------- -->
-            <div class="max-width-boxes ann-main">
-                <div class="inner-main-ann flex-box">
+            <div class="ann-main">
+                <div class="inner-main-ann">
 
                     <div class="inner-rank-title">
-                        <div class="rank-title-sec-div">
-                            <div class="title-sec-inner">
-                                <h3 class="rank-h1">Announcements</h3>
-                                <div class="divider-line-sec ann-divider"></div>
-                            </div>
+                        <div class="rank-title-sec-div divider-line-sec">
+                            <h3 class="rank-h1 divider-style">Announcements</h3>
                         </div>
                         <div class="title-sec-content">
                             <div class="title-content-div">
@@ -1989,8 +1755,10 @@
         <div class="up-sec-main">
             <div class="max-width-boxes">
                 <div>
-                    <div>
-                        Upcoming Events
+                    <div class="upcoming_events divider-line-sec">
+                        <div class="divider-style">
+                            Upcoming Events
+                        </div>
                     </div>
                     <div>
                         <a href="https://www.nitk.ac.in/upcoming_events">View all Upcoming Events</a>
@@ -2002,23 +1770,19 @@
                             <div>27 Dec</div>
                             <div>
 
-                                One-week short term course on Experimental and Numerical Approaches to Two-Phase Heat
-                                Transfer (ENTPHT-2021)
+                                One-week short term course on Experimental and Numerical Approaches to Two-Phase Heat Transfer (ENTPHT-2021)
                             </div>
                         </div>
                         <div class="flex-box">
                             <div>30 May</div>
                             <div>
-                                7-Days Advanced Topics SERB Sponsored Workshop on Advanced Topics in Network Security
-                                and
-                                Cryptography
+                                7-Days Advanced Topics SERB Sponsored Workshop on Advanced Topics in Network Security and Cryptography
                             </div>
                         </div>
                         <div class="flex-box">
                             <div>09 Jun</div>
                             <div>
-                                2nd International Conference on Computational Electronics for Wireless Communications
-                                (ICCWC-2022)
+                                2nd International Conference on Computational Electronics for Wireless Communications (ICCWC-2022)
                             </div>
                         </div>
                     </div>
@@ -2031,12 +1795,10 @@
         <div class="max-width-boxes">
             <div class="flex-box tweet-stats" style="gap: 2em;">
                 <div>
-                    <div class="">
-                        NITK Tweets
+                    <div class="divider-line-sec tweet-header">
+                        <div class="divider-style tweet-head">NITK Tweets</div>
                     </div>
-                    <a class="twitter-timeline" data-width="100%" data-height="330" data-theme="light"
-                        data-chrome="nofooter noborders noheader"
-                        href="https://twitter.com/surathkal_nitk?ref_src=twsrc%5Etfw">Tweets by surathkal_nitk</a>
+                    <a class="twitter-timeline" data-width="100%" data-height="330" data-theme="light" data-chrome="nofooter noborders noheader" href="https://twitter.com/surathkal_nitk?ref_src=twsrc%5Etfw">Tweets by surathkal_nitk</a>
                     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                     <div class="">
                         <a href="https://twitter.com/surathkal_nitk">Go to twitter page</a>
@@ -2045,9 +1807,8 @@
                 <div>
                     <div class="">
                         <div class="">
-                            <div class="">
-                                <h3 class="gdlr-core-block-item-title">Statistics </h3>
-                                <div class="gdlr-core-block-item-title-divider"></div>
+                            <div class="divider-line-sec tweet-header">
+                                <div class="divider-style tweet-head">Statistics </div>
                             </div>
                         </div>
                         <div class="">
@@ -2095,62 +1856,46 @@
                         <div class="main-data-item" data-tab-id="1" id="tab-main-vison-id">
                             <div class="">
                                 <div class="">
-                                    <h3 class="" id="h3_1dd7_32" style="font-size: 23px; ">Vision<span
-                                            class="title-item-divider title-item-divider-skin "></span>
+                                    <h3 class="" id="h3_1dd7_32" style="font-size: 23px; ">Vision<span class="title-item-divider title-item-divider-skin "></span>
                                     </h3>
                                 </div>
                             </div>
                             <div id="home-vision-tab_data">
-                                <p>To facilitate transformation of students into good human beings, responsible citizens
-                                    and competent professionals, focusing on the assimilation, generation and
-                                    dissemination of knowledge.
+                                <p>To facilitate transformation of students into good human beings, responsible citizens and competent professionals, focusing on the assimilation, generation and dissemination of knowledge.
                                 </p>
                             </div>
                         </div>
                         <div class="main-data-item" data-tab-id="2" id="tab-main-vison-id">
                             <div class="">
                                 <div class="">
-                                    <h3 class="" id="h3_1dd7_32" style="font-size: 23px; ">Mission<span
-                                            class="title-item-divider title-item-divider-skin "></span>
+                                    <h3 class="" id="h3_1dd7_32" style="font-size: 23px; ">Mission<span class="title-item-divider title-item-divider-skin "></span>
                                     </h3>
                                 </div>
                             </div>
                             <div id="home-vision-tab_data">
-                                <p>Impart quality education to meet the needs of profession and society, and achieve
-                                    excellence in teaching-learning and research.
+                                <p>Impart quality education to meet the needs of profession and society, and achieve excellence in teaching-learning and research.
                                 </p>
-                                <p>Attract and develop talented and committed human resources, and provide an
-                                    environment conducive to innovation, creativity, team-spirit and entrepreneurial
-                                    leadership.
+                                <p>Attract and develop talented and committed human resources, and provide an environment conducive to innovation, creativity, team-spirit and entrepreneurial leadership.
                                 </p>
-                                <p>Facilitate effective interactions among faculty and students, and foster networking
-                                    with alumni, industries, institutions and other stake-holders.
+                                <p>Facilitate effective interactions among faculty and students, and foster networking with alumni, industries, institutions and other stake-holders.
                                 </p>
-                                <p>Practice and promote high standards of professional ethics, transparency and
-                                    accountability.
+                                <p>Practice and promote high standards of professional ethics, transparency and accountability.
                                 </p>
                             </div>
                         </div>
                         <div class="main-data-item" data-tab-id="3" id="tab-main-vison-id">
                             <div class="">
                                 <div class=" ">
-                                    <h3 class="" id="h3_1dd7_32" style="font-size: 23px; ">History<span
-                                            class="title-item-divider title-item-divider-skin "></span>
+                                    <h3 class="" id="h3_1dd7_32" style="font-size: 23px; ">History<span class="title-item-divider title-item-divider-skin "></span>
                                     </h3>
                                 </div>
                             </div>
                             <div id="home-vision-tab_data">
-                                <p>National Institute of Technology Karnataka, Surathkal is located in Mangalore City,
-                                    Karnataka State, India. The Institute was established as Karnataka Regional
-                                    Engineering College (KREC) in 1960, and upgraded as National
+                                <p>National Institute of Technology Karnataka, Surathkal is located in Mangalore City, Karnataka State, India. The Institute was established as Karnataka Regional Engineering College (KREC) in 1960, and upgraded as National
                                     Institute of Technology Karnataka (NITK) in 2002.
                                 </p>
-                                <p>Mangalore is the headquarters of the coastal district of Dakshina Kannada, and boasts
-                                    an important centre of education, business and trade in the state. Sri. U. Srinivasa
-                                    Mallya, a visionary and a philanthropist, contributed
-                                    immensely to the development of the coastal region of Karnataka, and his effort
-                                    towards establishment of KREC (now NITK) is the most significant one. In recognition
-                                    of his role as the founder and architect of the institute,
+                                <p>Mangalore is the headquarters of the coastal district of Dakshina Kannada, and boasts an important centre of education, business and trade in the state. Sri. U. Srinivasa Mallya, a visionary and a philanthropist, contributed
+                                    immensely to the development of the coastal region of Karnataka, and his effort towards establishment of KREC (now NITK) is the most significant one. In recognition of his role as the founder and architect of the institute,
                                     the campus premises is named after him as Srinivasnagar.
                                 </p>
                             </div>
@@ -2190,8 +1935,7 @@
                                 <li class="menu-item "><a target="_blank " href="# ">Guest House (GH)</a></li>
                                 <li class="menu-item "><a target="_blank " href="# ">Health Care Centre (HCC)</a></li>
                                 <li class="menu-item "><a target="_blank " href="# ">Library</a></li>
-                                <li class="menu-item "><a target="_blank " href="# "
-                                        title="Science & Technology Entrepreneurs ' Park">STEP</a></li>
+                                <li class="menu-item "><a target="_blank " href="# " title="Science & Technology Entrepreneurs ' Park">STEP</a></li>
                                 <li class="menu-item"><a target="_blank" href="#">Virtual Tour</a></li>
                             </ul>
                         </div>

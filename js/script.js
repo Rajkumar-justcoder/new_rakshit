@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(function() {
     activate_image(1);
     scrollFunction();
 
@@ -58,7 +58,7 @@ for (var i = 0; i < contentChange.length; i++) {
 // this is on work so DNT 
 
 function scrollFunction() {
-    $(document).on('scroll', function () {
+    $(document).on('scroll', function() {
         if ($(window).scrollTop() > 50) {
             $('.main-nav-sec').addClass('scroll-nav');
         } else if ($(window).scrollTop() <= 50) {
@@ -158,7 +158,7 @@ var options = {
         data: [
             11.6, 8.9, 11.6, 14.4, 11.0, 5.5, 0, 0, 0
         ]
-    },],
+    }, ],
     xaxis: {
         categories: ["UG 2017", "UG 2018", "UG 2019", "PG 2017", "PG 2018", "PG 2019", "MCA 2017", "MCA 2018", "MCA 2019"],
     },
@@ -177,7 +177,7 @@ var options = {
             highlightDataSeries: true,
         },
         y: {
-            formatter: function (val, { series, seriesIndex, dataPointIndex, w }) {
+            formatter: function(val, { series, seriesIndex, dataPointIndex, w }) {
                 return val;
             },
 
@@ -198,7 +198,7 @@ chart.render();
 
 // slider slick js 
 
-
+/*
 $(document).ready(function () {
     $('.news-slider').slick({
         slidesToShow: 1,
@@ -224,3 +224,4 @@ $(document).ready(function () {
     });
     $('.news-slider').show()
 });
+ */
