@@ -196,5 +196,31 @@ chart.render();
 
 
 
-// translate js 
+// slider slick js 
 
+
+$(document).ready(function () {
+    $('.news-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 6000,
+        arrows: true,
+        prevArrow: $('.prev-news'),
+        nextArrow: $('.next-news'),
+        dots: false,
+        pauseOnHover: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
+    });
+    $('.news-slider').show()
+});
