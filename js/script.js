@@ -102,11 +102,6 @@ function showSlides(n) {
 
 
 
-
-
-
-
-
 var branch_names = {
     "AM": "Applied Mechanics and Hydraulics",
     "CH": "Chemical Engineering",
