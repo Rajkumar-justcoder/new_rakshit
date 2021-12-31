@@ -13,6 +13,7 @@
     --other-color-1: #3db166;
     --color-h3: #182847;
     --color-date-span: #50bd77;
+    --color-month: #152647;
 }
 
 body {
@@ -50,6 +51,24 @@ a {
     left: 0;
     transform: translateY(-50%);
     z-index: -1
+}
+
+
+.date-span{
+    color: var(--color-date-span);
+    font-size: 34px;
+    line-height: 1;
+    font-weight: 700;
+}
+.tail-of-dates{
+    color: var(--color-date-span);
+}
+.tail-month{
+    color: var(--color-month);
+    font-size: 16px;
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 
@@ -777,6 +796,10 @@ input#find {
 
 .title-sec-content {
     padding-top: 35px
+}
+
+.rank-title-h3{
+    font-size: 18px;
 }
 
 
