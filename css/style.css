@@ -11,6 +11,8 @@
     --text-color-5: #888;
     --text-color-6: #999;
     --other-color-1: #3db166;
+    --color-h3: #182847;
+    --color-date-span: #50bd77;
 }
 
 body {
@@ -448,6 +450,12 @@ input#find {
     min-width: max-content
 }
 
+@media screen and (max-width:1266px) {
+    .sub-nav li {
+        padding: 1px 8px;
+        font-size: 12px;
+    }
+}
 
 /* #sublink-of-main{
     display: block;
@@ -788,6 +796,13 @@ input#find {
     letter-spacing: 0px;
     color: #163269
 }
+
+
+.upcom-link a{
+    color: var(--color-h3);
+}
+
+
 
 
 /* upworks section end  */
