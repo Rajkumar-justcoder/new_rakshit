@@ -14,6 +14,10 @@
     --color-h3: #182847;
     --color-date-span: #50bd77;
     --color-month: #152647;
+    --color-ann-text: #444444;
+    --color-inner-date-sec: #959595;
+    --divider-border-color: #e6e6e6;
+    
 }
 
 body {
@@ -36,6 +40,9 @@ a {
     flex-wrap: wrap;
     justify-content: space-between
 }
+.widthfull{
+    width: 100%;
+}
 
 .divider-line-sec {
     position: relative;
@@ -45,7 +52,7 @@ a {
     position: absolute;
     content: "";
     width: 100%;
-    height: 2px;
+    height: 3px;
     background-color: #e6e6e6;
     top: 50%;
     left: 0;
@@ -70,6 +77,11 @@ a {
     font-weight: 700;
     text-transform: uppercase;
 }
+
+.inner-date-sec a{
+    color: var(--color-inner-date-sec);
+}
+
 
 
 /* nav title start  */
@@ -760,7 +772,7 @@ input#find {
     justify-content: center !important;
     gap: 3em;
     padding: 80px 0 20px 0;
-    padding-inline: 2.5em;
+    padding-inline: 1em;
 }
 
 .sec-of-ranks .divider-line-sec::before {
@@ -774,12 +786,12 @@ input#find {
 
 .news-main {
     /* width: 40% */
-    flex: 2 1 0;
+    flex: 12% 1 0;
 }
 
 .ann-main {
     /* width: 35% */
-    flex: 2 1 0;
+    flex: 12% 1 0;
 }
 
 .rank-title-sec-div {
@@ -800,9 +812,58 @@ input#find {
 
 .rank-title-h3{
     font-size: 18px;
+    margin-bottom: 10px;
+}
+.span-main-date{
+    margin: 0 20px 14px 0;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    padding-bottom: 10px;
+    border-color: var(--color-date-span);
+}
+.ranks-text{
+
+}
+
+.text-rank-a{
+    color: var(--color-ann-text);
+    font-size: 16px;
+    font-weight: 600;
+    
+}
+
+.one-rank-main,.two-rank-main,.three-rank-main{
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+}
+.divider-text-rank{
+    border-bottom-width: 2px;
+    border-color: var(--divider-border-color);
+    border-bottom-style: solid;
+    padding-bottom: 13px;
+}
+.rank-date-inner-s{
+    margin-bottom: 8px;
+}
+.news-text,.ann-text{
+    margin-bottom: 15px;
 }
 
 
+.div-center-allrank{
+    display: flex;
+    justify-content: space-between;
+}
+.rank-btn-style{
+background: var(--text-color-1);
+padding: 0px 10px;
+border: none;
+}
+.arrow{
+    font-size: 20px !important;
+    font-weight: bolder !important;
+    cursor: pointer;
+}
 /* ranking sec end  */
 
 
@@ -820,15 +881,81 @@ input#find {
     color: #163269
 }
 
+.upcom-link{
+    font-size: 19px;
+    margin-bottom: 14px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.flex{
+    flex: 2 1 0;
+}
 
 .upcom-link a{
     color: var(--color-h3);
 }
 
+.up-main-text{
+    margin: 0 5% 0 0;
+}
 
+.adjester{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.tail-date-main{
+    font-size: 13px;
+    flex-direction: column;
+}
+.internal-date-sec{
+    margin-bottom: 2px;
+}
+.faclock-alt{
+    margin-right: 10px;
+}
+.fa-clock-o{
+    color: var(--color-date-span);
+}
+.up-sec-div{
+    padding-bottom: 25px;
+}
+.up-mar{
+    margin-bottom: 10px;
+}
+.title-up-even{
+    margin-bottom: 30px;
+    padding-top: 20px;
+    margin-top: 8px;
+    font-size: 14px;
+    
+}
+.title-up-even a{
+    color: var(--other-color-1);
+}
 
 
 /* upworks section end  */
+
+
+
+/* tweet section  */
+.links-of-all-link-div a{
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #475c87;
+    padding: 0px 0px 0px 0px;
+    text-transform: none;
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    font-weight: 700;
+}
+
+
+
 
 
 /*  */
