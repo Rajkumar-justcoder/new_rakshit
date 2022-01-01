@@ -193,7 +193,7 @@ chart.render();
 
 // slider slick js 
 
-/*
+
 $(document).ready(function () {
     $('.news-slider').slick({
         slidesToShow: 1,
@@ -219,4 +219,47 @@ $(document).ready(function () {
     });
     $('.news-slider').show()
 });
- */
+
+$(document).ready(function () {
+    $('.announce-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 6000,
+        arrows: true,
+        prevArrow: $('.prev-announcements'),
+        nextArrow: $('.next-announcements'),
+        dots: false,
+        pauseOnHover: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
+    });
+    $('.announce-slider').show()
+});
+// $(document).ready(function() {
+//     $('.news-slider').click({
+//         slidesToShow: 4,
+//         slidesToScroll: 1,
+//         autoplay: true,
+//         autoplaySpeed: 1300,
+//         responsive: [{
+//             breakpoint: 850,
+//             settings: {
+//                 slidesToShow: 1,
+//                 slidesToScroll: 1,
+//                 infinite: true,
+//             }
+//         }]
+//     });
+//     $('.news-slider').show()
+// });
+
